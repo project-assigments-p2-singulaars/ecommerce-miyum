@@ -1,0 +1,185 @@
+html {
+  font-size: 16px;
+  font-family: Inter;
+}
+
+body {
+  background-color: #F9F9F9;
+  color: #0B0B0B;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.4rem;
+  padding: 1rem 1.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.padding-wrap {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.categories-nav {
+  background-color: #FFFFFF;
+  font-size: 1.5rem;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  border-top: 0.125rem solid #0B0B0B;
+  border-bottom: 0.125rem solid #0B0B0B;
+}
+.categories-nav__categories-tabs {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+  justify-content: center;
+}
+.categories-nav .categories-tabs__tab-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: #535353;
+  cursor: pointer;
+  padding: 1.3rem 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.categories-nav .categories-tabs__tab-item i {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #535353;
+}
+.categories-nav .categories-tabs__tab-item::after {
+  content: "";
+  bottom: 0;
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #0B0B0B;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.categories-nav .categories-tabs__tab-item i::before {
+  color: #535353;
+}
+.categories-nav .categories-tabs__tab-item span {
+  font-size: 1rem;
+}
+.categories-nav .categories-tabs__tab-item:hover {
+  color: #0B0B0B;
+}
+.categories-nav .categories-tabs__tab-item:hover::after {
+  opacity: 1;
+}
+.categories-nav .categories-tabs__tab-item:hover i::before {
+  color: #0B0B0B;
+}
+.categories-nav .categories-tabs__tab-item.active {
+  color: #FF4A4C;
+}
+.categories-nav .categories-tabs__tab-item.active::after {
+  background-color: #FF6969;
+  opacity: 1;
+}
+.categories-nav .categories-tabs__tab-item.active i::before {
+  color: #FF4A4C;
+}
+
+.products__title {
+  border-bottom: 0.125rem solid #0B0B0B;
+}
+.products__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+.products__container .products__product-card {
+  max-width: 50%;
+  min-width: 46%;
+  text-align: center;
+  border: 0.125rem solid #0B0B0B;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.products__container .products__product-card:hover {
+  border: 0.2rem solid #0B0B0B;
+}
+.products__container .products__product-card .product-card__name::after {
+  content: "";
+  height: 2px;
+  background-color: #0B0B0B;
+  margin-top: 2px;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.products__container .products__product-card:hover .product-card__name::after {
+  opacity: 1;
+}
+.products__container .products__product-card .product-card__price-tag {
+  position: absolute;
+  background-color: white;
+  top: 0.5rem;
+  left: -0.5rem;
+  padding: 0.3rem 2rem 0.3rem 0.5rem;
+  border-radius: 0 1rem 1rem 0;
+  border: 0.125rem solid #0B0B0B;
+  font-weight: 500;
+}
+.products__container .products__product-card .product-card__add-to-cart-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 50%;
+  min-width: 25px;
+  min-height: 25px;
+  padding: 0;
+  border: 0.125rem solid #0B0B0B;
+  background-color: #FFF1D7;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0B0B0B;
+  text-align: center;
+  vertical-align: middle;
+}
+.products__container .products__product-card .product-card__image {
+  padding: 1.8rem 0;
+  background-color: #F3F3F3;
+}
+.products__container .products__product-card .product-card__info {
+  padding: 1.5rem 0;
+  border-top: 0.125rem solid #0B0B0B;
+}
+.products__container .products__product-card .product-card__info .product-card__name {
+  font-weight: 500;
+  margin-top: 0;
+  display: inline-block;
+}
+.products__container .products__product-card .product-card__info .product-card__category {
+  color: #494746;
+  display: block;
+}
+
+/*   MEDIA QUERIES   */
+@media screen and (width > 800px) {
+  .products .products__container .products__product-card {
+    max-width: 32%;
+    min-width: 30%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
