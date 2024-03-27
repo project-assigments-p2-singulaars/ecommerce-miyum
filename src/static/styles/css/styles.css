@@ -179,10 +179,6 @@ h4 {
   .products .products__container .products__product-card {
     max-width: 32%;
     min-width: 30%;
-    text-align: center;
-    border: 0.125rem solid #0B0B0B;
-    position: relative;
-    transition: all 0.2s ease;
   }
 }
 
