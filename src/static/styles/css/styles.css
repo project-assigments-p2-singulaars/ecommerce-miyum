@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   font-family: Inter;
@@ -26,6 +30,11 @@ h4 {
 .padding-wrap {
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.margin-wrap {
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .categories-nav {
@@ -155,6 +164,7 @@ h4 {
   color: #0B0B0B;
   text-align: center;
   vertical-align: middle;
+  display: none;
 }
 .products__container .products__product-card .product-card__image {
   padding: 1.8rem 0;
@@ -180,6 +190,107 @@ h4 {
     max-width: 32%;
     min-width: 30%;
   }
+  .products .products__container .products__product-card .product-card__add-to-cart-btn {
+    display: block;
+  }
+}
+.burger-menu-view {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #F9F9F9;
+  display: none;
+}
+
+.burger-menu-view.visible {
+  display: flex;
+  flex-direction: column;
+}
+
+body:has(.burger-menu-view.visible) {
+  overflow: hidden;
+}
+
+.close-btn {
+  display: block;
+  border: 0.125rem solid #0B0B0B;
+  width: fit-content;
+  background-color: white;
+  color: #0B0B0B;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 1.2rem;
+}
+
+.search-field {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.search-field__input {
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 0.125rem solid #0B0B0B;
+  border-radius: inherit;
+}
+
+.burger-menu-view__burger-menu .burger-menu__list .list__nav-item {
+  border-bottom: 0.125rem solid #0B0B0B;
+  background-color: white;
+  font-size: 1.325rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.burger-menu-view__burger-menu .burger-menu__list .list__nav-item:first-child {
+  border-top: 0.125rem solid #0B0B0B;
+}
+.burger-menu-view__burger-menu .burger-menu__list .list__nav-item:hover {
+  background-color: #F3F3F3;
+}
+.burger-menu-view__burger-menu .burger-menu__list .list__nav-item a {
+  display: flex;
+  padding: 1.125rem 2rem;
+}
+.burger-menu-view__burger-menu .burger-menu__list .list__nav-item i:first-child {
+  margin-right: 1rem;
+}
+.burger-menu-view__burger-menu .burger-menu__list .list__nav-item i:last-child {
+  margin-left: auto;
+}
+.burger-menu-view__burger-menu .burger-menu__list .list__nav-item span::after {
+  content: "";
+  height: 2px;
+  background-color: #0B0B0B;
+  margin-top: 2px;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.burger-menu-view__burger-menu .burger-menu__list .list__nav-item:hover span::after {
+  opacity: 1;
+}
+
+.burger-menu-view .social-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.burger-menu-view .social-icons__icon {
+  transition: color 0.3s ease;
+}
+.burger-menu-view .social-icons__icon:hover {
+  color: #FF6969;
 }
 
 /*# sourceMappingURL=styles.css.map */
