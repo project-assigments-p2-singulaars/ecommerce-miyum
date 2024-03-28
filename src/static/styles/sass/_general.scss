@@ -1,0 +1,39 @@
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+  font-family: Inter;
+}
+
+body{
+  background-color: $bg-color__main;
+  color: $color__black-main;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+h3{
+  font-size: 1.4rem;
+  padding: 1rem 1.8rem;
+}
+
+h4{
+  font-size: 1.2rem;
+  margin: .5rem;
+}
+
+.padding-wrap{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.margin-wrap{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
