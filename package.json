@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass":"sass --watch ./src/static/styles/sass:./src/static/styles/css"
+    "sass": "sass --watch ./src/static/styles/sass:./src/static/styles/css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/project-assigments-p2-singulaars/ecommerce-miyum.git"
+    "url": "git+https://github.com/project-assigments-p2-singulaars/ecommerce-miyum.git#main"
   },
   "author": "",
   "license": "ISC",
