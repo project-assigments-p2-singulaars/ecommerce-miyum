@@ -1,6 +1,6 @@
 
 export function navbar(){
-    const body = document.querySelector("body")
+    const body = document.querySelector("body");
     const navBarContainer = document.createElement("div");
     navBarContainer.classList.add("bottom-nav-bar");
     

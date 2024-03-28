@@ -1,9 +1,7 @@
 
-
-export function productDetailView(){
-    const main = document.querySelector("main")
-    const mainContainer = document.createElement("div")
-
+function productDetailView(){
+    const main = document.querySelector("main");
+    const mainContainer = document.createElement("div");
     mainContainer.classList.add("product-detail__view");
 
     mainContainer.innerHTML = /*html*/`
@@ -37,8 +35,9 @@ export function productDetailView(){
             </div>
         </div>
     </div>
-`
+`;
 
-    main.appendChild(mainContainer)
-
+    main.appendChild(mainContainer);
 }
+
+productDetailView();
