@@ -1,0 +1,205 @@
+
+.categories-nav{
+  background-color: $bg-color__categories-nav;
+  font-size: 1.5rem;
+  // padding: 1.3rem 0;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  border-top: .125rem solid $border-color__default;
+  border-bottom: .125rem solid $border-color__default;
+
+
+  &__categories-tabs{
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+
+  .categories-tabs__tab-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: $text-color__categories-tabs__tab-item--default;
+    cursor: pointer;
+    padding: 1.3rem 0;
+    transition: all .3s ease;
+    position: relative;
+
+    i{
+      text-align: center;
+      font-size: 2.5rem;
+      color: $text-color__categories-tabs__tab-item--default;
+    }
+
+    &::after{
+      content: '';
+      bottom: 0;
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: $text-color__categories-tabs__tab-item--hover;
+      opacity: 0;
+      transition: all .3s ease;
+    }
+
+    i::before{
+      color: $text-color__categories-tabs__tab-item--default;
+    }
+
+    span{
+      font-size: 1rem;
+    }
+
+  }
+
+  .categories-tabs__tab-item:hover{
+    color: $text-color__categories-tabs__tab-item--hover;
+
+    &::after{
+      opacity: 1;
+    }
+
+    i::before{
+      color: $text-color__categories-tabs__tab-item--hover;
+    }
+
+  }
+
+  .categories-tabs__tab-item.active{
+    color: $text-color__categories-tabs__tab-item--active;
+    
+    &::after{
+      background-color: $color__rose-main;
+      opacity: 1;
+    }
+
+    i::before{
+      color: $text-color__categories-tabs__tab-item--active;
+    }
+
+  }
+
+}
+
+
+.products{
+
+  &__title{
+    border-bottom: .125rem solid $border-color__default;
+  }
+
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+
+    .products__product-card{
+      max-width: 50%;
+      min-width: 46%;
+      text-align: center;
+      border: .125rem solid $border-color__default;
+      position: relative;
+      transition: all .2s ease;
+
+      &:hover{
+        border: .200rem solid $border-color__default;;
+      }
+
+      .product-card__name::after{
+        content: '';
+        height: 2px;
+        background-color: $text-color__product-card__name;
+        margin-top: 2px;
+        display: block;
+        opacity: 0;
+        transition: opacity .2s ease;
+      }
+
+      &:hover .product-card__name::after{
+        opacity: 1;
+      }
+
+      .product-card__price-tag{
+        position: absolute;
+        background-color: white;
+        top: .5rem;
+        left: -.5rem;
+        padding: .3rem 2rem .3rem .5rem;
+        border-radius: 0 1rem 1rem 0;
+        border: .125rem solid $border-color__default;
+        font-weight: 500;
+      }
+
+      .product-card__add-to-cart-btn{
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        border-radius: 50%;
+        min-width: 25px;
+        min-height: 25px;
+        padding: 0;
+        border: .125rem solid $border-color__default;
+        background-color: $bg-color__product-card__add-to-cart-btn--default;
+        font-size: .8rem;
+        font-weight: 600;
+        color: $text-color__product-card__add-to-cart-btn--default;
+        text-align: center;
+        vertical-align: middle;
+        display: none;
+      }
+
+      .product-card__image{
+        padding: 1.8rem 0;
+        background-color: $bg-color__product-card__image;
+      }
+
+      .product-card__info{
+        padding: 1.5rem 0;
+        border-top: .125rem solid $border-color__default;
+
+        .product-card__name{
+          font-weight: 500;
+          margin-top: 0;
+          display: inline-block;
+        }
+
+        .product-card__category{
+          color: $text-color__product-card__category;
+          display: block;
+        }
+      }
+    }
+
+  }
+
+
+
+
+}
+
+
+
+/*   MEDIA QUERIES   */
+
+@media screen and ( width > 800px ){
+
+  .products .products__container .products__product-card{
+    max-width: 32%;
+    min-width: 30%;
+  }
+
+  .products .products__container .products__product-card .product-card__add-to-cart-btn{
+    display: block;
+  }
+
+}
+
+
+
