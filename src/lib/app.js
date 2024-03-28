@@ -1,11 +1,10 @@
-
+import { productDetailView } from "./productDetailView.js";
 import { burgerMenuView } from './burgerMenuView.js';
 import { productsComponent } from './productsComponent.js';
 
 document.addEventListener('DOMContentLoaded', initApp);
 
 function initApp(){
-
 
   const productsData = [
     {
@@ -69,5 +68,5 @@ function initApp(){
 
   burgerMenuView();
   productsComponent( productsData );
-
+  productDetailView();
 }
