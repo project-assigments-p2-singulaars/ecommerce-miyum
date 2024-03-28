@@ -5,7 +5,7 @@ export function burgerMenuView(  ){
   const body = document.querySelector('body');
 
   const burgerMenuEl = document.createElement('div');
-  burgerMenuEl.classList.add('burger-menu-view', 'visible');
+  burgerMenuEl.classList.add('burger-menu-view');
 
   burgerMenuEl.innerHTML = /* html */`
     <button class="burger-menu-view__close-btn close-btn margin-wrap"><i class="fa-solid fa-xmark"></i></button>
