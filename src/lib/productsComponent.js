@@ -54,7 +54,7 @@ export function productsComponent( array ){
     productEl.classList.add('products__product-card');
     
     productEl.innerHTML = /* html */`
-      <a href="#">
+      <a href="./pages/product-detail-view.html">
         <span class="product-card__price-tag">${ productData.price }€</span><button class="product-card__add-to-cart-btn"><i>+</i></button>
         <figure class="product-card__image"><img src=${ productData.image } alt=""></figure>
         <div class="product-card__info">

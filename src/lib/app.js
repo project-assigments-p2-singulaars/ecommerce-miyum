@@ -1,6 +1,5 @@
 
-import { navbar } from "./bottomNavBar.js"
-import { productDetailView } from "./productDetailView.js";
+import { navbar } from "./bottomNavBar.js";
 import { burgerMenuView } from './burgerMenuView.js';
 import { productsComponent } from './productsComponent.js';
 
@@ -70,6 +69,5 @@ function initApp(){
 
   burgerMenuView();
   productsComponent( productsData );
-  productDetailView();
   navbar();
 }
