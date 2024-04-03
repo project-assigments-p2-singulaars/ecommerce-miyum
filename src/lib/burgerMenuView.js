@@ -1,14 +1,15 @@
+import { toggleMenu, } from "./bottomNavBar.js";
 
-
-export function burgerMenuView(  ){
+export function burgerMenuView(  ) {
 
   const body = document.querySelector('body');
 
   const burgerMenuEl = document.createElement('div');
   burgerMenuEl.classList.add('burger-menu-view');
 
+
   burgerMenuEl.innerHTML = /* html */`
-    <button class="burger-menu-view__close-btn close-btn margin-wrap"><i class="fa-solid fa-xmark"></i></button>
+    <button id="close" class="burger-menu-view__close-btn close-btn margin-wrap"><i class="fa-solid fa-xmark"></i></button>
     <div class="search-field">
       <input type="text" name="search" class="search-field__input" placeholder="Look for your Yum..."/>
     </div>
@@ -28,7 +29,19 @@ export function burgerMenuView(  ){
     </div>
   `;
 
-
   body.appendChild(burgerMenuEl);
 
+  const addCloseEvent = () => {
+    const closeButton = document.getElementById("close");
+    if (closeButton) { 
+        closeButton.addEventListener("click", () => {
+            toggleMenu();
+        });
+    }
+  };
+  
+  
+  addCloseEvent();
+
+ 
 }
