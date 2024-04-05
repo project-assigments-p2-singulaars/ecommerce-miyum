@@ -199,6 +199,17 @@
     display: block;
   }
 
+  .categories-nav{
+    top: 4.4rem;
+  }
+
+  .categories-nav .categories-tabs__tab-item{
+
+    i{
+      display: none;
+    }
+  }
+
 }
 
 
