@@ -11,7 +11,6 @@
   border-top: 0.07rem solid black;
 }
 
-
 .bottom-nav-bar button {
   font-size: 1.5rem;
   background-color: white;
@@ -30,9 +29,7 @@
 /*   MEDIA QUERIES   */
 
 @media screen and (width > 800px) {
-
   .bottom-nav-bar{
     display: none;
   }
-
 }

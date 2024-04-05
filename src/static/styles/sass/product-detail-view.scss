@@ -29,14 +29,14 @@ main{
 }
 
 .button-back{
-width: 2rem;
-height: 2rem;
-background-color: #ffffff;
-border: 0.120rem solid black;
-border-radius: 22%;
-display: block;
-margin-left: 2rem;
-margin-top: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #ffffff;
+    border: 0.120rem solid black;
+    border-radius: 22%;
+    display: block;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 .product-detail{
@@ -46,7 +46,6 @@ margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
     .product-detail__image img{
         width: 25rem;
