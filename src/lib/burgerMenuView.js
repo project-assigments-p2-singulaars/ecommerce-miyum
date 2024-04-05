@@ -15,10 +15,10 @@ export function burgerMenuView(  ) {
     </div>
     <nav class="burger-menu-view__burger-menu">
       <ul class="burger-menu__list">
-        <li class="list__nav-item"><a href="#"><i class="nav-item__icon fa-solid fa-house"></i><span>Home</span><i class="nav-item__icon-right fa-solid fa-angle-right"></i></a></li>
-        <li class="list__nav-item"><a href="#"><i class="nav-item__icon fa-solid fa-cookie"></i><span>Products</span><i class="nav-item__icon-right fa-solid fa-angle-right"></i></a></li>
-        <li class="list__nav-item"><a href="#"><i class="nav-item__icon fa-solid fa-seedling"></i><span>About</span><i class="nav-item__icon-right fa-solid fa-angle-right"></i></a></li>
-        <li class="list__nav-item"><a href="#"><i class="nav-item__icon fa-regular fa-envelope"></i><span>Contact</span><i class="nav-item__icon-right fa-solid fa-angle-right"></i></a></li>
+        <li class="list__nav-item"><a href="/src"><i class="nav-item__icon fa-solid fa-house"></i><span>Home</span><i class="nav-item__icon-right fa-solid fa-angle-right"></i></a></li>
+        <li class="list__nav-item"><a href="/Products"><i class="nav-item__icon fa-solid fa-cookie"></i><span>Products</span><i class="nav-item__icon-right fa-solid fa-angle-right"></i></a></li>
+        <li class="list__nav-item"><a href="/About"><i class="nav-item__icon fa-solid fa-seedling"></i><span>About</span><i class="nav-item__icon-right fa-solid fa-angle-right"></i></a></li>
+        <li class="list__nav-item"><a href="/Contact"><i class="nav-item__icon fa-regular fa-envelope"></i><span>Contact</span><i class="nav-item__icon-right fa-solid fa-angle-right"></i></a></li>
       </ul>
     </nav>
     <div class="social-icons padding-wrap">
