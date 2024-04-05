@@ -2,6 +2,7 @@
 import { navbar } from "./bottomNavBar.js";
 import { burgerMenuView } from './burgerMenuView.js';
 import { productsComponent } from './productsComponent.js';
+import { headerTopNav } from "./headerTopNav.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -67,7 +68,9 @@ function initApp(){
 
   ]
 
+  headerTopNav();
   burgerMenuView();
   productsComponent( productsData );
   navbar();
+
 }
