@@ -5,11 +5,13 @@
 html {
   font-size: 16px;
   font-family: "DM Sans", Inter, "Poppins";
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #F9F9F9;
   color: #0B0B0B;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -29,6 +31,11 @@ h3 {
 h4 {
   font-size: 1.2rem;
   margin: 0.5rem;
+}
+
+.title-section {
+  border-top: 0.125rem solid #0B0B0B;
+  border-bottom: 0.125rem solid #0B0B0B;
 }
 
 .padding-wrap {
@@ -56,7 +63,6 @@ h4 {
   position: sticky;
   z-index: 10;
   top: 0;
-  border-top: 0.125rem solid #0B0B0B;
   border-bottom: 0.125rem solid #0B0B0B;
 }
 .categories-nav__categories-tabs {
@@ -389,6 +395,121 @@ h4 {
     display: flex;
   }
 }
+.favorites-products {
+  overflow: hidden;
+}
+.favorites-products .title-section {
+  border-bottom: none;
+}
+.favorites-products__container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 65vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.favorites-products__container .favorites-products__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40vw;
+  height: inherit;
+  border-top: 0.125rem solid #0B0B0B;
+  border-bottom: 0.125rem solid #0B0B0B;
+  border-right: 0.125rem solid #0B0B0B;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.favorites-products__container .favorites-products__item img {
+  width: 60%;
+  object-fit: contain;
+  height: 40%;
+  transform: translateY(50%);
+  transition: all 0.4s ease;
+}
+.favorites-products__container .favorites-products__item .item__details {
+  height: 35%;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  opacity: 0;
+  transition: all 0.4s ease;
+  transform: translateY(150%);
+  border-top: 0.125rem solid #0B0B0B;
+}
+.favorites-products__container .favorites-products__item .item__details .details__title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.favorites-products__container .favorites-products__item:hover {
+  justify-content: space-between;
+}
+.favorites-products__container .favorites-products__item:hover img {
+  transform: translateY(25%);
+}
+.favorites-products__container .favorites-products__item:hover .item__details {
+  transform: translateY(0);
+  opacity: 1;
+}
+.favorites-products__container .favorites-products__item:nth-of-type(1) {
+  background-color: rgba(226, 137, 137, 0.35);
+}
+.favorites-products__container .favorites-products__item:nth-of-type(2) {
+  background-color: rgba(137, 210, 226, 0.35);
+}
+.favorites-products__container .favorites-products__item:nth-of-type(3) {
+  background-color: rgba(226, 196, 137, 0.35);
+}
+.favorites-products__container .favorites-products__item:nth-of-type(4) {
+  background-color: rgba(249, 195, 195, 0.35);
+}
+.favorites-products__container .favorites-products__item:nth-of-type(5) {
+  background-color: rgba(226, 137, 164, 0.35);
+}
+.favorites-products__container .favorites-products__item:nth-of-type(6) {
+  background-color: rgba(226, 137, 137, 0.35);
+}
+.favorites-products__container .favorites-products__item:nth-of-type(7) {
+  background-color: rgba(226, 137, 137, 0.35);
+}
+.favorites-products__container .favorites-products__item:nth-of-type(8) {
+  background-color: rgba(226, 137, 137, 0.35);
+}
+.favorites-products__container .favorites-products__item:nth-of-type(9) {
+  background-color: rgba(226, 137, 137, 0.35);
+}
+.favorites-products__container .favorites-products__item:last-child {
+  border-right: none;
+}
+
+@media screen and (width > 800px) {
+  .favorites-products .favorites-products__container {
+    height: 35vw;
+  }
+  .favorites-products .favorites-products__container .favorites-products__item {
+    width: 23vw;
+  }
+}
+@media screen and (width > 1250px) {
+  .favorites-products .favorites-products__container {
+    height: 25vw;
+  }
+  .favorites-products .favorites-products__container .favorites-products__item {
+    width: 18vw;
+  }
+}
 .burger-menu-view {
   height: 100vh;
   width: 100vw;
@@ -494,6 +615,7 @@ body:has(.burger-menu-view.visible) {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   position: fixed;
+  z-index: 9999;
   bottom: 0;
   left: 0;
   border-top: 0.07rem solid black;

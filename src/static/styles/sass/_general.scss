@@ -6,11 +6,13 @@
 html{
   font-size: 16px;
   font-family: 'DM Sans', Inter, 'Poppins', ;
+  scroll-behavior: smooth;
 }
 
 body{
   background-color: $bg-color__main;
   color: $color__black-main;
+  scroll-behavior: smooth;
 }
 
 main{
@@ -30,6 +32,11 @@ h3{
 h4{
   font-size: 1.2rem;
   margin: .5rem;
+}
+
+.title-section{
+  border-top: .125rem solid $border-color__default;
+  border-bottom: .125rem solid $border-color__default;
 }
 
 .padding-wrap{

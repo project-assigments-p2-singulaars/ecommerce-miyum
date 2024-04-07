@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   position: fixed;
+  z-index: 9999;
   bottom: 0;
   left: 0;
   border-top: 0.07rem solid black;
