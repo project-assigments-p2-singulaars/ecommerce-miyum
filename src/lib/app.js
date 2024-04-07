@@ -6,6 +6,7 @@ import { headerTopNav } from "./headerTopNav.js";
 import { heroStarred } from "./heroStarred.js";
 import { valuesComponent } from "./valuesComponent.js";
 import { favoritesProducts } from "./favoritesProducts.js";
+import { footerSection } from "./footer.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -78,5 +79,6 @@ function initApp(){
   favoritesProducts();
   productsComponent( productsData );
   navbar();
+  footerSection();
 
 }
