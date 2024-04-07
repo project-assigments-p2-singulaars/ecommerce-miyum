@@ -6,7 +6,7 @@
   position: sticky;
   z-index: 10;
   top: 0;
-  border-top: .125rem solid $border-color__default;
+  // border-top: .125rem solid $border-color__default;
   border-bottom: .125rem solid $border-color__default;
 
 
@@ -197,6 +197,17 @@
 
   .products .products__container .products__product-card .product-card__add-to-cart-btn{
     display: block;
+  }
+
+  .categories-nav{
+    top: 4.4rem;
+  }
+
+  .categories-nav .categories-tabs__tab-item{
+
+    i{
+      display: none;
+    }
   }
 
 }
