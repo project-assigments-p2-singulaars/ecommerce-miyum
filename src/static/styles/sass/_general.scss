@@ -15,6 +15,10 @@ body{
   scroll-behavior: smooth;
 }
 
+main{
+  padding-bottom: 5rem;
+}
+
 a{
   color: inherit;
   text-decoration: none;
@@ -43,4 +47,18 @@ h4{
 .margin-wrap{
   margin-right: 1rem;
   margin-left: 1rem;
+}
+
+.title-section{
+  border-bottom: .125rem solid $border-color__default;
+}
+
+
+
+@media screen and (width > 800px) {
+
+  main{
+    padding-bottom: 0;
+  }
+
 }
