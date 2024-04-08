@@ -170,10 +170,6 @@ h4 {
   padding: 1.8rem 0;
   background-color: #F3F3F3;
 }
-.products__container .products__product-card .product-card__image img {
-  width: 100%;
-  height: auto;
-}
 .products__container .products__product-card .product-card__info {
   padding: 1.5rem 0;
   border-top: 0.125rem solid #0B0B0B;
@@ -221,6 +217,7 @@ body:has(.burger-menu-view.visible) {
 .close-btn {
   display: block;
   border: 0.125rem solid #0B0B0B;
+  width: -moz-fit-content;
   width: fit-content;
   background-color: white;
   color: #0B0B0B;
@@ -323,6 +320,4 @@ html {
   background-color: white;
   height: 5rem;
   border: 0.125rem solid black;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

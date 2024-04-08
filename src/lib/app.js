@@ -68,6 +68,7 @@ function initApp(){
   ]
 
   burgerMenuView();
-  productsComponent( productsData );
+  productsComponent();
   navbar();
+  // renderProductCard();
 }
