@@ -722,9 +722,6 @@ footer.main-footer .main-footer__col4 {
     gap: 30px;
     font-size: 2.5rem;
   }
-  footer.main-footer .main-footer__col4 {
-    width: 280px;
-  }
 }
 .search-modal {
   display: flex;
@@ -828,7 +825,7 @@ footer.main-footer .main-footer__col4 {
   width: 40vw;
   max-width: 700px;
   min-width: 500px;
-  min-height: 40vh;
+  height: 0;
   background-color: white;
   z-index: 90;
   position: fixed;
@@ -839,6 +836,7 @@ footer.main-footer .main-footer__col4 {
   visibility: hidden;
   transform: translateY(-40vh);
   transition: all 0.4s ease;
+  overflow: hidden;
 }
 .shopping-cart .shopping-cart__category {
   margin: 1rem 0;
@@ -916,6 +914,8 @@ footer.main-footer .main-footer__col4 {
 .shopping-cart.visible {
   visibility: visible;
   transform: translateY(0);
+  min-height: 40vh;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

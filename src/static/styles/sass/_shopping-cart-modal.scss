@@ -4,7 +4,7 @@
   width: 40vw;
   max-width: 700px;
   min-width: 500px;
-  min-height: 40vh;
+  height: 0;
   background-color: white;
   z-index: 90;
   position: fixed;
@@ -15,6 +15,7 @@
   visibility: hidden;
   transform: translateY(-40vh);
   transition: all .4s ease;
+  overflow: hidden;
 
   .shopping-cart__category{
     margin: 1rem 0;
@@ -109,4 +110,6 @@
 .shopping-cart.visible{
   visibility: visible;
   transform: translateY(0);
+  min-height: 40vh;
+  height: auto;
 }
