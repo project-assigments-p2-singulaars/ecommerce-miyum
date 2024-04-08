@@ -7,6 +7,7 @@ import { heroStarred } from "./heroStarred.js";
 import { valuesComponent } from "./valuesComponent.js";
 import { favoritesProducts } from "./favoritesProducts.js";
 import { footerSection } from "./footer.js";
+import { searchModal } from "./searchModal.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -80,5 +81,5 @@ function initApp(){
   productsComponent( productsData );
   navbar();
   footerSection();
-
+  searchModal();
 }
