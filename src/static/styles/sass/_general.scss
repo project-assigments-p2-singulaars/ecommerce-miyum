@@ -5,12 +5,18 @@
 
 html{
   font-size: 16px;
-  font-family: Inter;
+  font-family: 'DM Sans', Inter, 'Poppins', ;
+  scroll-behavior: smooth;
 }
 
 body{
   background-color: $bg-color__main;
   color: $color__black-main;
+  scroll-behavior: smooth;
+}
+
+main{
+  padding-bottom: 5rem;
 }
 
 a{
@@ -28,6 +34,11 @@ h4{
   margin: .5rem;
 }
 
+.title-section{
+  border-top: .125rem solid $border-color__default;
+  border-bottom: .125rem solid $border-color__default;
+}
+
 .padding-wrap{
   padding-right: 1rem;
   padding-left: 1rem;
@@ -36,4 +47,18 @@ h4{
 .margin-wrap{
   margin-right: 1rem;
   margin-left: 1rem;
+}
+
+.title-section{
+  border-bottom: .125rem solid $border-color__default;
+}
+
+
+
+@media screen and (width > 800px) {
+
+  main{
+    padding-bottom: 0;
+  }
+
 }

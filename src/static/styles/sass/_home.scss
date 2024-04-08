@@ -6,7 +6,7 @@
   position: sticky;
   z-index: 10;
   top: 0;
-  border-top: .125rem solid $border-color__default;
+  // border-top: .125rem solid $border-color__default;
   border-bottom: .125rem solid $border-color__default;
 
 
@@ -95,14 +95,14 @@
   &__container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     gap: 1rem;
 
     .products__product-card{
-      max-width: 50%;
-      min-width: 46%;
+      width: 100vw;
+      min-height: 50vw;
       text-align: center;
       border: .125rem solid $border-color__default;
       position: relative;
@@ -158,16 +158,19 @@
       .product-card__image{
         padding: 1.8rem 0;
         background-color: $bg-color__product-card__image;
+        height: 70%;
+        display: flex;
 
         img{
-          width: 100%;
-          height: auto;
+          margin: auto;
+          width: 50%;
         }
-      } 
+      }
 
       .product-card__info{
         padding: 1.5rem 0;
         border-top: .125rem solid $border-color__default;
+        height: 30%;
 
         .product-card__name{
           font-weight: 500;
@@ -193,15 +196,55 @@
 
 /*   MEDIA QUERIES   */
 
+@media screen and ( width > 485px ){
+
+  .products .products__container .products__product-card{
+    width: 45vw;
+    min-height: 60vw;
+  }
+
+}
+
 @media screen and ( width > 800px ){
 
   .products .products__container .products__product-card{
-    max-width: 32%;
-    min-width: 30%;
+    width: 30vw;
+    min-height: 35vw;
   }
 
   .products .products__container .products__product-card .product-card__add-to-cart-btn{
     display: block;
+  }
+
+  .categories-nav{
+    top: 4.4rem;
+  }
+
+  .categories-nav .categories-tabs__tab-item{
+
+    i{
+      display: none;
+    }
+  }
+
+}
+
+@media screen and ( width > 1000px ){
+
+  .products .products__container .products__product-card{
+    width: 23vw;
+    // max-width: 25vw;
+    min-height: 30vw;
+  }
+
+}
+
+@media screen and ( width > 1250px ){
+
+  .products .products__container .products__product-card{
+    width: 18.4vw;
+    // max-width: 25vw;
+    min-height: 30vw;
   }
 
 }
