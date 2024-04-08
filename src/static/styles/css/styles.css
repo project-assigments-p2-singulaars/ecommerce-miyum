@@ -824,5 +824,98 @@ footer.main-footer .main-footer__col4 {
     width: 23.5%;
   }
 }
+.shopping-cart {
+  width: 40vw;
+  max-width: 700px;
+  min-width: 500px;
+  min-height: 40vh;
+  background-color: white;
+  z-index: 90;
+  position: fixed;
+  top: 4.5rem;
+  right: 0;
+  padding: 2rem 3rem;
+  box-shadow: -0.2rem 0.2rem 0.315rem black;
+  visibility: hidden;
+  transform: translateY(-40vh);
+  transition: all 0.4s ease;
+}
+.shopping-cart .shopping-cart__category {
+  margin: 1rem 0;
+}
+.shopping-cart .category__product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 0.5rem 1rem;
+  border: 0.125rem solid #0B0B0B;
+  margin: 0.5rem 0;
+}
+.shopping-cart .category__product .product__image {
+  width: 3rem;
+}
+.shopping-cart .category__product .product__details {
+  margin-left: -2rem;
+}
+.shopping-cart .category__product .product__details .details__name {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.shopping-cart .category__product .product__details .details__flavor {
+  font-size: 0.8rem;
+}
+.shopping-cart .category__product .product__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20%;
+  font-size: 1.2rem;
+}
+.shopping-cart .category__product .product__counter button {
+  background-color: inherit;
+  border: 0.1rem solid #0B0B0B;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0 0.4rem;
+}
+.shopping-cart .category__product .product__counter button:hover {
+  background-color: #0B0B0B;
+  color: white;
+}
+.shopping-cart .category__product .product__price {
+  font-weight: 600;
+}
+.shopping-cart .shopping-cart__total {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+.shopping-cart .shopping-cart__total .total__span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.shopping-cart .shopping-cart__total .total__price {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.shopping-cart .shopping-cart__purchase-btn {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0.7rem 0;
+  border-radius: 0.315rem;
+  border: 0.125rem solid #0B0B0B;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.shopping-cart.visible {
+  visibility: visible;
+  transform: translateY(0);
+}
 
 /*# sourceMappingURL=styles.css.map */

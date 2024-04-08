@@ -8,6 +8,7 @@ import { valuesComponent } from "./valuesComponent.js";
 import { favoritesProducts } from "./favoritesProducts.js";
 import { footerSection } from "./footer.js";
 import { searchModal } from "./searchModal.js";
+import { shoppingCartModal } from "./shoppingCartModal.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -82,4 +83,5 @@ function initApp(){
   navbar();
   footerSection();
   searchModal();
+  shoppingCartModal();
 }
