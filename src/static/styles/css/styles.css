@@ -194,6 +194,10 @@ h4 {
   margin: auto;
   width: 50%;
 }
+.products__container .products__product-card .product-card__image img {
+  width: 100%;
+  height: auto;
+}
 .products__container .products__product-card .product-card__info {
   padding: 1.5rem 0;
   border-top: 0.125rem solid #0B0B0B;
