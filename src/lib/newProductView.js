@@ -1,3 +1,14 @@
+
+import { headerDashboard } from "./headerDashboard.js";
+import { newProductForm } from "./newProductForm.js";
+
+document.addEventListener('DOMContentLoaded', initView);
+
+function initView( ){
+
+  headerDashboard();
+  newProductForm();
+
 const newProductForm = document.getElementById('newProductForm')
 const productUrl = 'http://localhost:3000/products'
 
