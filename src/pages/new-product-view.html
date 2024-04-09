@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+<form id="newProductForm">
+    <label for="product_name">Product Name:</label><br>
+    <input type="text" id="product_name" name="name" required><br><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" required></textarea><br><br>
+
+    <label for="category">Category:</label><br>
+    <select id="category" name="category" required>
+        <option value="pastries">Pastries</option>
+        <option value="cookies">Cookies</option>
+        <option value="cakes">Cakes</option>
+        <option value="donuts">Donuts</option>
+        <option value="bread">Bread</option>
+    </select><br><br>
+
+    <label for="flavor">Flavor:</label><br>
+    <input type="text" id="flavor" name="flavor" required><br><br>
+
+    <label for="price">Price:</label><br>
+    <input type="number" id="price" name="price" placeholder="€" required><br><br>
+
+    <label for="special_diets">Special Diets:</label><br>
+    <select id="special_diets" name="special_diets" required>
+        <option value="gluten_free">Gluten Free</option>
+        <option value="vegan">Vegan</option>
+        <option value="egg_free">Egg Free</option>
+        <option value="dairy_free">Dairy Free</option>
+        <option value="nut_free">Nut Free</option>
+    </select><br><br>
+
+    <label for="product_image">Upload Product Image:</label><br>
+    <input type="file" id="product_image" name="image_url" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script src="../lib/newProductView.js" defer></script>
+</body>
+</html>
