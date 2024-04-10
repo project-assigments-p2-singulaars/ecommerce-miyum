@@ -749,7 +749,8 @@ footer.main-footer .main-footer__col4 {
   transition: transform 0.5s ease;
   padding: 0 1.2rem;
 }
-.search-modal .search-modal__top-nav {
+
+.search__top-nav {
   max-height: 100px;
   width: 100%;
   display: flex;
@@ -757,44 +758,45 @@ footer.main-footer .main-footer__col4 {
   gap: 1rem;
   margin-bottom: 4rem;
 }
-.search-modal .search-modal__top-nav img {
+.search__top-nav img {
   width: 60px;
 }
-.search-modal .search-modal__top-nav .top-nav__search {
+.search__top-nav .top-nav__search {
   width: inherit;
   position: relative;
   margin-left: -0.5rem;
 }
-.search-modal .search-modal__top-nav .top-nav__search .search__search-field {
+.search__top-nav .top-nav__search .search__search-field {
   width: inherit;
   padding: 0.5rem 1rem;
 }
-.search-modal .search-modal__top-nav .top-nav__search .search__search-history {
+.search__top-nav .top-nav__search .search__search-history {
   position: absolute;
   bottom: -2rem;
   left: 0;
 }
-.search-modal .search-modal__top-nav #close-search-modal-btn {
+.search__top-nav #close-search-modal-btn {
   cursor: pointer;
 }
-.search-modal .search-modal__results {
+
+.search-modal__results {
   overflow: scroll;
   scroll-behavior: smooth;
   padding-bottom: 4rem;
 }
-.search-modal .search-modal__results .results__top-bar {
+.search-modal__results .results__top-bar {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
   background-color: white;
 }
-.search-modal .search-modal__results .results__products {
+.search-modal__results .results__products {
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
   margin-top: 1rem;
 }
-.search-modal .search-modal__results .products__item {
+.search-modal__results .products__item {
   padding: 2rem;
   background-color: white;
   width: 49%;
@@ -804,12 +806,12 @@ footer.main-footer .main-footer__col4 {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.search-modal .search-modal__results .products__item .item__price {
+.search-modal__results .products__item .item__price {
   position: absolute;
   top: 1rem;
   left: 1rem;
 }
-.search-modal .search-modal__results .products__item:hover {
+.search-modal__results .products__item:hover {
   border: 0.175rem solid lightgray;
 }
 
@@ -823,12 +825,12 @@ footer.main-footer .main-footer__col4 {
 }
 
 @media screen and (width > 650px) {
-  .search-modal .search-modal__results .products__item {
+  .search-modal__results .products__item {
     width: 32%;
   }
 }
 @media screen and (width > 800px) {
-  .search-modal .search-modal__results .products__item {
+  .search-modal__results .products__item {
     width: 23.5%;
   }
 }
@@ -971,6 +973,174 @@ footer.main-footer .main-footer__col4 {
 }
 .new-product input[type=submit] {
   margin-top: 2rem;
+}
+
+main .search__top-nav {
+  padding-top: 2rem;
+}
+
+body:has(main.dashboard):has(.dashboard__products) {
+  overflow: hidden;
+}
+body:has(main.dashboard):has(.dashboard__products) main .search__top-nav {
+  padding-top: 0;
+}
+body:has(main.dashboard):has(.dashboard__products) .results__products {
+  height: 65vh;
+  overflow: scroll;
+}
+
+.dashboard {
+  padding: 1rem;
+}
+
+.dashboard__products {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard__products .products__filters {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.dashboard__products .products__filters .filters__type {
+  margin-bottom: 1rem;
+}
+.dashboard__products .products__filters .filters__type .type__title {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.dashboard__products .products__filters .filters__type:last-of-type {
+  margin-bottom: 0;
+}
+.dashboard__products .products__filters .items__filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+.dashboard__products .products__filters .items__filter:last-of-type {
+  margin-bottom: 0;
+}
+
+.products__results {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+.products__results .results__top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+.products__results .results__products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  margin-top: 1rem;
+}
+.products__results .products__item {
+  padding: 2rem;
+  padding-bottom: 4rem;
+  background-color: white;
+  width: 100%;
+  max-height: 40vh;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.products__results .products__item .item__price {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.products__results .products__item .item__image {
+  width: 70%;
+}
+.products__results .products__item .item__details {
+  margin-bottom: 1rem;
+}
+.products__results .products__item .item__buttons {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.75rem;
+}
+.products__results .products__item .item__buttons button {
+  width: 50%;
+  height: inherit;
+  border: inherit;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.products__results .products__item .item__buttons .buttons__edit {
+  background-color: #F2F2F2;
+  color: #3A3838;
+}
+.products__results .products__item .item__buttons .buttons__delete {
+  background-color: #C55F5F;
+  color: white;
+}
+.products__results .products__item:hover {
+  border: 0.175rem solid lightgray;
+}
+
+.search-modal.visible {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.search-modal.results {
+  height: 100vh;
+}
+
+@media screen and (width > 500px) {
+  .dashboard__products .products__item {
+    width: 49%;
+  }
+}
+@media screen and (width > 650px) {
+  .dashboard {
+    padding: 2rem;
+  }
+  .search-modal__results .products__item {
+    width: 32%;
+  }
+}
+@media screen and (width > 800px) {
+  .dashboard__products .products__item {
+    width: 32%;
+  }
+  .dashboard__products:has(.products__filters) {
+    flex-direction: row;
+  }
+  .dashboard__products:has(.products__filters) .products__filters {
+    width: 30%;
+  }
+  .dashboard__products:has(.products__filters) .products__results {
+    width: 70%;
+  }
+  .search-modal__results .products__item {
+    width: 23.5%;
+  }
+}
+@media screen and (width > 1000px) {
+  .dashboard__products .products__item {
+    width: 23.5%;
+  }
+}
+@media screen and (width > 1250px) {
+  .dashboard__products .products__item {
+    width: 18.4%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

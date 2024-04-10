@@ -4,9 +4,8 @@ export function searchModal( ){
   const searchModalEl = document.createElement('aside');
   searchModalEl.classList.add('search-modal', 'results');
 
-
   searchModalEl.innerHTML = /* html */`
-    <nav class="search-modal__top-nav padding-wrap">
+    <nav class="search__top-nav padding-wrap">
       <a class="top-nav__image" href="/src/index.html" target="_blank" >
         <img src="./static/images/logoMiYum.png" alt="logo MiYum">
       </a>

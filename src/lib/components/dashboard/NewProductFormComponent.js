@@ -1,10 +1,9 @@
 
 
-export function newProductForm( ){
+export function NewProductFormComponent( ){
 
-  const newProductFormEl = document.querySelector('form');
+  const newProductFormEl = document.createElement('form');
   newProductFormEl.classList.add('new-product');
-  newProductFormEl.method = 'post';
 
   newProductFormEl.innerHTML = /* html */`
     <label for="product-name">Product Name</label>
@@ -51,10 +50,5 @@ export function newProductForm( ){
     <input type="submit" value="Save Changes">
   `;
 
-  document.querySelector('main').appendChild( newProductFormEl );
+  return newProductFormEl;
 }
-
-// function getInputData( selector ){
-
-//   document.querySelector()
-// }
