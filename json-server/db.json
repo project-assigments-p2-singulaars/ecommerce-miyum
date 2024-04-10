@@ -447,6 +447,26 @@
       "discount": false,
       "discount_value": 0,
       "category": "breads"
+    },
+    {
+      "id": "574d",
+      "name": "ds",
+      "description": "df",
+      "category": "cakes",
+      "flavor": "xfsdf",
+      "price": "fsdf",
+      "special_diets": "gluten-free",
+      "image_url": ""
+    },
+    {
+      "id": "aebd",
+      "name": "zsd",
+      "description": "das",
+      "category": "cakes",
+      "flavor": "da",
+      "price": "123",
+      "special_diets": "gluten-free",
+      "image_url": "C:\\fakepath\\Screenshot 2024-03-08 110454.png"
     }
   ],
   "special_diets": [
