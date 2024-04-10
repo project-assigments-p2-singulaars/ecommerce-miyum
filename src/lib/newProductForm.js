@@ -58,13 +58,24 @@ export function newProductForm( ){
 
   const productUrl = 'http://localhost:3000/products'
 
+  fetch(productUrl)
+    .then(response => response.json())
+    .then(products => {
+      
+      const existingIds = products.map(product => product.id);
+      const maxId = Math.max(...existingIds);
+      console.log(maxId);
+    
   newProductFormEl.addEventListener('submit', event  =>{
 
     event.preventDefault()
     console.log(event)
 
+    const newProductId = maxId + 1;
+
     const productData = {
-      name: event.target.name.value,
+        id: newProductId,
+        name: event.target.name.value,
         description: event.target.description.value,
         category: event.target.category.value,
         flavor: event.target.flavor.value,
@@ -85,7 +96,10 @@ export function newProductForm( ){
 
   })
 
+    })
+
 }
+  
 
 // function getInputData( selector ){
 
