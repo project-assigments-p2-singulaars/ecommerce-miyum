@@ -91,15 +91,13 @@ export function newProductForm( ){
         'application/json'
         },
         body: JSON.stringify(productData)
-
         })
 
   })
 
     })
 
-}
-  
+} 
 
 // function getInputData( selector ){
 

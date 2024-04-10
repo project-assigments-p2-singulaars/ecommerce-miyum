@@ -32,8 +32,8 @@
     },
     {
       "id": "2",
-      "flavor": "Vanilla",
-      "name": "Sourdough Loaf",
+      "flavor": "Sourdough",
+      "name": "Sunrise Sourdough",
       "description": "Artisanal sourdough bread, freshly baked every morning.",
       "price": "4,00",
       "special_diets": [
@@ -47,7 +47,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2022/01/24/13/56/bread-6963474_1280.png",
       "weight": "500g",
       "calories": 200,
       "fat": "2g",
@@ -60,7 +60,7 @@
     {
       "id": "3",
       "flavor": "Chocolate",
-      "name": "Chocolate Chip Cookies",
+      "name": "Choco Chunks",
       "description": "Classic chocolate chip cookies, soft and chewy.",
       "price": "2,50",
       "special_diets": [
@@ -78,7 +78,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2023/07/23/14/13/cookie-8145166_1280.png",
       "weight": "50g each",
       "calories": 150,
       "fat": "8g",
@@ -86,12 +86,158 @@
       "protein": "2g",
       "discount": true,
       "discount_value": 0,
-      "category": "pastries"
+      "category": "cookies"
     },
     {
       "id": "4",
       "flavor": "Chocolate",
-      "name": "Blueberry Muffin",
+      "name": "Chocho Yum",
+      "description": "Indulge in the ultimate chocolate experience with our signature 'Chocho Yum' muffin. Moist, chocolatey, and utterly irresistible, it's the perfect treat to satisfy your sweet cravings and leave you craving for more.",
+      "price": "2,75",
+      "special_diets": [
+        4
+      ],
+      "ingredients": [
+        "flour",
+        "sugar",
+        "butter",
+        "eggs",
+        "lemon zest",
+        "poppyseeds",
+        "baking powder",
+        "milk",
+        "vanilla extract",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2022/01/08/17/56/chocolate-muffin-6924517_1280.png",
+      "weight": "120g",
+      "calories": 220,
+      "fat": "8g",
+      "carbohydrates": "30g",
+      "protein": "4g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "pastries"
+    },
+    {
+      "id": "5",
+      "flavor": "Savory",
+      "name": "Pretzel Pleaser",
+      "description": "A guilt-free delight, these Vegan Gluten-Free Pretzel Pillows are crispy on the outside, soft on the inside, and bursting with savory flavor.",
+      "price": "3,75",
+      "special_diets": [
+        5
+      ],
+      "ingredients": [
+        "flour",
+        "almond paste",
+        "butter",
+        "sugar",
+        "yeast",
+        "salt",
+        "sliced almonds"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2022/01/08/17/57/bread-6924526_1280.png",
+      "weight": "130g",
+      "calories": 320,
+      "fat": "18g",
+      "carbohydrates": "30g",
+      "protein": "6g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "pastries"
+    },
+    {
+      "id": "6",
+      "flavor": "Pumpkin",
+      "name": "Autumn Spice Pie",
+      "description": "A seasonal delight, blending creamy pumpkin with a perfect mix of spices for a taste of autumn in every bite.",
+      "price": "3,00",
+      "special_diets": [
+        2,
+        4
+      ],
+      "ingredients": [
+        "flour",
+        "bananas",
+        "sugar",
+        "coconut oil",
+        "baking soda",
+        "vanilla extract",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2022/11/27/23/33/pie-7620891_1280.png",
+      "weight": "400g",
+      "calories": 180,
+      "fat": "5g",
+      "carbohydrates": "35g",
+      "protein": "3g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "cakes"
+    },
+    {
+      "id": "7",
+      "flavor": "Strawberry",
+      "name": "Blush Berry Donut",
+      "description": "A sweet delight with its soft texture and irresistible pink frosting, a treat sure to bring a smile to your face.",
+      "price": "5,00",
+      "special_diets": [
+        4
+      ],
+      "ingredients": [
+        "milk",
+        "pumpkin spice syrup",
+        "whipped cream"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2022/02/16/16/49/dessert-7017159_1280.png",
+      "weight": "350g",
+      "calories": 250,
+      "fat": "10g",
+      "carbohydrates": "30g",
+      "protein": "8g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "donuts"
+    },
+    {
+      "id": "8",
+      "flavor": "Chocolate",
+      "name": "Choco Charm Brownie",
+      "description": "Rich and fudgy chocolate brownie made without gluten-containing ingredients.",
+      "price": "3,25",
+      "special_diets": [
+        1,
+        4
+      ],
+      "ingredients": [
+        "cocoa powder",
+        "butter",
+        "sugar",
+        "eggs",
+        "gluten-free flour",
+        "vanilla extract",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2021/06/16/23/34/food-6342333_1280.png",
+      "weight": "80g",
+      "calories": 200,
+      "fat": "12g",
+      "carbohydrates": "25g",
+      "protein": "3g",
+      "discount": true,
+      "discount_value": 0,
+      "category": "pastries"
+    },
+    {
+      "id": "9",
+      "flavor": "Blueberry",
+      "name": "Yumberry Chocho",
       "description": "Moist muffin packed with juicy blueberries.",
       "price": "2,75",
       "special_diets": [
@@ -110,7 +256,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2022/01/08/17/56/muffin-6924519_1280.png",
       "weight": "150g",
       "calories": 250,
       "fat": "10g",
@@ -121,156 +267,10 @@
       "category": "pastries"
     },
     {
-      "id": "5",
-      "flavor": "Chocolate",
-      "name": "Almond Croissant",
-      "description": "Croissant filled with almond paste and topped with sliced almonds.",
-      "price": "3,75",
-      "special_diets": [
-        5
-      ],
-      "ingredients": [
-        "flour",
-        "almond paste",
-        "butter",
-        "sugar",
-        "yeast",
-        "salt",
-        "sliced almonds"
-      ],
-      "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
-      "weight": "130g",
-      "calories": 320,
-      "fat": "18g",
-      "carbohydrates": "30g",
-      "protein": "6g",
-      "discount": false,
-      "discount_value": 0,
-      "category": "pastries"
-    },
-    {
-      "id": "6",
-      "flavor": "Chocolate",
-      "name": "Vegan Banana Bread",
-      "description": "Moist and flavorful banana bread made without any animal products.",
-      "price": "3,00",
-      "special_diets": [
-        2,
-        4
-      ],
-      "ingredients": [
-        "flour",
-        "bananas",
-        "sugar",
-        "coconut oil",
-        "baking soda",
-        "vanilla extract",
-        "salt"
-      ],
-      "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
-      "weight": "400g",
-      "calories": 180,
-      "fat": "5g",
-      "carbohydrates": "35g",
-      "protein": "3g",
-      "discount": false,
-      "discount_value": 0,
-      "category": "cakes"
-    },
-    {
-      "id": "7",
-      "flavor": "Chocolate",
-      "name": "Pumpkin Spice Donut",
-      "description": "Creamy donut with pumpkin spice flavoring, topped with whipped cream.",
-      "price": "5,00",
-      "special_diets": [
-        4
-      ],
-      "ingredients": [
-        "milk",
-        "pumpkin spice syrup",
-        "whipped cream"
-      ],
-      "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
-      "weight": "350g",
-      "calories": 250,
-      "fat": "10g",
-      "carbohydrates": "30g",
-      "protein": "8g",
-      "discount": false,
-      "discount_value": 0,
-      "category": "donuts"
-    },
-    {
-      "id": "8",
-      "flavor": "Chocolate",
-      "name": "Gluten-Free Brownie",
-      "description": "Rich and fudgy chocolate brownie made without gluten-containing ingredients.",
-      "price": "3,25",
-      "special_diets": [
-        1,
-        4
-      ],
-      "ingredients": [
-        "cocoa powder",
-        "butter",
-        "sugar",
-        "eggs",
-        "gluten-free flour",
-        "vanilla extract",
-        "salt"
-      ],
-      "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
-      "weight": "80g",
-      "calories": 200,
-      "fat": "12g",
-      "carbohydrates": "25g",
-      "protein": "3g",
-      "discount": true,
-      "discount_value": 0,
-      "category": "pastries"
-    },
-    {
-      "id": "9",
-      "flavor": "Chocolate",
-      "name": "Lemon Poppyseed Muffin",
-      "description": "Zesty lemon muffin with poppyseeds for added crunch.",
-      "price": "2,75",
-      "special_diets": [
-        4
-      ],
-      "ingredients": [
-        "flour",
-        "sugar",
-        "butter",
-        "eggs",
-        "lemon zest",
-        "poppyseeds",
-        "baking powder",
-        "milk",
-        "vanilla extract",
-        "salt"
-      ],
-      "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
-      "weight": "120g",
-      "calories": 220,
-      "fat": "8g",
-      "carbohydrates": "30g",
-      "protein": "4g",
-      "discount": false,
-      "discount_value": 0,
-      "category": "pastries"
-    },
-    {
       "id": "10",
-      "flavor": "Chocolate",
-      "name": "Cherry Pie",
-      "description": "Sweet cherry pie with a flaky golden crust.",
+      "flavor": "Lemon",
+      "name": "Zesty Zing Pie",
+      "description": "Savor the tangy goodness of our lemon pie, featuring a zesty lemon filling in a buttery crust.",
       "price": "6,00",
       "special_diets": [
         5
@@ -286,7 +286,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2016/07/13/10/44/pie-1514111_1280.png",
       "weight": "600g",
       "calories": 350,
       "fat": "15g",
@@ -299,7 +299,7 @@
     {
       "id": "11",
       "flavor": "Chocolate",
-      "name": "Vegan Chocolate Cake",
+      "name": "Choco Craze Cake",
       "description": "Decadent chocolate cake made with vegan ingredients.",
       "price": "4,50",
       "special_diets": [
@@ -317,7 +317,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2022/03/18/06/54/chocolate-7075990_1280.png",
       "weight": "500g",
       "calories": 280,
       "fat": "10g",
@@ -329,9 +329,9 @@
     },
     {
       "id": "12",
-      "flavor": "Chocolate",
-      "name": "Oatmeal Raisin Cookies",
-      "description": "Soft and chewy oatmeal cookies with plump raisins.",
+      "flavor": "Caramel",
+      "name": "Caramel Crunch Donut",
+      "description": "Soft and crunchy caramel donuts with cookie bites on top.",
       "price": "2,50",
       "special_diets": [
         5
@@ -349,7 +349,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2022/02/28/17/55/dessert-7039755_1280.png",
       "weight": "60g each",
       "calories": 180,
       "fat": "6g",
@@ -357,12 +357,12 @@
       "protein": "2g",
       "discount": false,
       "discount_value": 0,
-      "category": "pastries"
+      "category": "donuts"
     },
     {
       "id": "13",
-      "flavor": "Chocolate",
-      "name": "Gluten-Free Pancakes",
+      "flavor": "Chocolate Cream",
+      "name": "Chocho Bomb Yum",
       "description": "Fluffy pancakes made with gluten-free flour.",
       "price": "3,50",
       "special_diets": [
@@ -380,7 +380,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2022/01/08/17/57/dessert-6924520_1280.png",
       "weight": "200g",
       "calories": 180,
       "fat": "5g",
@@ -392,9 +392,9 @@
     },
     {
       "id": "14",
-      "flavor": "Chocolate",
-      "name": "Vegan Blueberry Cheesecake",
-      "description": "Creamy cheesecake with a blueberry compote topping, made without dairy or animal products.",
+      "flavor": "Cinammon",
+      "name": "Cinammon Sins Donut",
+      "description": "Chewy donut with a cinammon topping, made without dairy or animal products.",
       "price": "5,50",
       "special_diets": [
         2,
@@ -412,7 +412,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2022/02/15/18/44/donut-7015479_1280.png",
       "weight": "500g",
       "calories": 300,
       "fat": "15g",
@@ -420,12 +420,12 @@
       "protein": "4g",
       "discount": false,
       "discount_value": 0,
-      "category": "cakes"
+      "category": "donuts"
     },
     {
       "id": "15",
-      "flavor": "Chocolate",
-      "name": "French Baguette",
+      "flavor": "Savory",
+      "name": "Oui Oui Baguette",
       "description": "Classic French baguette with a crispy crust and soft interior.",
       "price": "2,00",
       "special_diets": [
@@ -438,7 +438,7 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
+      "image_url": "https://cdn.pixabay.com/photo/2017/03/31/02/27/bread-2190249_1280.png",
       "weight": "250g",
       "calories": 180,
       "fat": "1g",
@@ -496,8 +496,7 @@
       "id": "2",
       "name": "cookies",
       "products": [
-        3,
-        12
+        3
       ]
     },
     {
