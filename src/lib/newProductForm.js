@@ -2,7 +2,7 @@
 
 export function newProductForm( ){
 
-  const newProductFormEl = document.querySelector('form');
+  const newProductFormEl = document.createElement('form');
   newProductFormEl.classList.add('new-product');
   newProductFormEl.method = 'post';
 
@@ -35,7 +35,7 @@ export function newProductForm( ){
         <span class="tags__tag" data-diet="vegan">Vegan</span>
         <span class="tags__tag" data-diet="vegetarian">Vegetarian</span>
       </div>
-      <select name="special-diets" id="product-special-diets">
+      <select name="special_diets" id="product-special-diets">
         <option value="gluten-free">Gluten-Free</option>
         <option value="lactose-free">Lactose-Free</option>
         <option value="vegan">Vegan</option>
@@ -45,16 +45,53 @@ export function newProductForm( ){
     </div>
 
     <label for="product-image">Change Product Image</label>
-    <input type="file" name="image" id="product-image">
+    <input type="file" name="image_url" id="product-image">
     <img src="" alt="new product image" >
 
     <input type="submit" value="Save Changes">
   `;
 
   document.querySelector('main').appendChild( newProductFormEl );
+
+
+// CRUD
+
+  const productUrl = 'http://localhost:3000/products'
+
+  newProductFormEl.addEventListener('submit', event  =>{
+
+    event.preventDefault()
+    console.log(event)
+
+    const productData = {
+      name: event.target.name.value,
+        description: event.target.description.value,
+        category: event.target.category.value,
+        flavor: event.target.flavor.value,
+        price: event.target.price.value,
+        special_diets: event.target.special_diets.value,
+        image_url: event.target.image_url.value
+    }
+
+    fetch(productUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type':
+        'application/json'
+        },
+        body: JSON.stringify(productData)
+
+        })
+
+  })
+
 }
 
 // function getInputData( selector ){
 
 //   document.querySelector()
 // }
+
+
+
+
