@@ -11,7 +11,7 @@ function initView( ){
   const headerEl = HeaderDashboardComponent();
   document.body.insertBefore(headerEl, mainDashboardEl);
   
-  const searchBarEl = SearchBarComponent();
+  const searchBarEl = SearchBarComponent( );
   mainDashboardEl.appendChild( searchBarEl );
 
   const dashboardProductsSectionEl = SearchProductsComponent( 'dashboard' );

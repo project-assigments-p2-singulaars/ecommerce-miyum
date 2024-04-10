@@ -32,6 +32,9 @@
     width: inherit;
     position: relative;
     margin-left: -.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     .search__search-field{
       width: inherit;
@@ -48,6 +51,7 @@
 
   #close-search-modal-btn{
     cursor: pointer;
+    margin-left: 1rem;
   }
 }
 

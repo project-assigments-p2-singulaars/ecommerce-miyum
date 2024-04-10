@@ -159,10 +159,6 @@ body:has(main.dashboard):has(.dashboard__products){
 
 @media screen and ( width > 650px ){
 
-  // .dashboard__products{
-  //   padding: 0 2rem;
-  // }
-
   .dashboard{
     padding: 2rem;
   }
@@ -178,8 +174,13 @@ body:has(main.dashboard):has(.dashboard__products){
 
 @media screen and ( width > 800px ){
 
+  body:has(main.dashboard):has(.dashboard__products){
+    main{
+      padding-top: 3rem;
+    }
+  }
+
   .dashboard__products{
-    // padding: 0 2rem;
 
     .products__item{
       width: 32%;
@@ -188,7 +189,6 @@ body:has(main.dashboard):has(.dashboard__products){
 
   .dashboard__products:has(.products__filters){
     flex-direction: row;
-    // padding: 0 2rem;
 
     .products__filters{
       width: 30%;

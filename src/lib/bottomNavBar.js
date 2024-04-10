@@ -26,7 +26,7 @@ export function navbar() {
     const iconShopping = document.getElementById("menu-shopping")
 
     openPages(iconHome, "/src");
-    openPages(iconUser, "/src");
+    openPages(iconUser, "/src/pages/dashboard-view.html");
     openPages(iconShopping, "/src");
 }
 
