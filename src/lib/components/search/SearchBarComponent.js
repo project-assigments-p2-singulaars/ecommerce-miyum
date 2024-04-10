@@ -38,8 +38,8 @@ export function SearchBarComponent( ) {
       const inputValue = e.target.value;
       const filteredProducts = filterProducts( productsData, inputValue );
       sendProductsDataToStorage( filteredProducts );
-      sendInputValueToStorage( inputValue );
-      
+      // sendInputValueToStorage( inputValue );
+
       /* Event to consume data anywhere when storage is changed */
       const sendDataByEvent = new CustomEvent('storageChanged', {
         detail: {
@@ -67,7 +67,7 @@ export function SearchBarComponent( ) {
 }
 
 
-async function fetchProductsData(){
+export async function fetchProductsData(){
 
   const endpoint = `http://localhost:3000/products`;
   const request = await fetch( endpoint );
@@ -90,7 +90,7 @@ function filterProducts( products, inputValue ){
 
 function sendProductsDataToStorage( productsData ){
 
-  sessionStorage.setItem( 'search-results', JSON.stringify( productsData ) );
+  localStorage.setItem( 'search-results', JSON.stringify( productsData ) );
 
 }
 
