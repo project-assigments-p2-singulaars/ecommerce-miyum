@@ -105,5 +105,28 @@ export function searchModal( ){
     searchModalEl.classList.toggle('visible');
   })
 
+let data;
+let search__searchField;
 
+
+fetch("http://localhost:3000/products")
+.then(response => response.json())
+.then(dataResponse => {
+  data = dataResponse;
+})
+
+
+const searchField = document.getElementById("search__search-field");
+  searchField.addEventListener("input", function() {
+    const searchTerm = this.value.toLowerCase();
+
+    const eventFilter = data.filter (e => {
+      eventFilter.forEach (item => {
+        console.log(item)
+      })
+      return e.name.toLowerCase().includes(searchTerm);
+    })
+  })
 }
+
+
