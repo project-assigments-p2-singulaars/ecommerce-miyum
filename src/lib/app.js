@@ -8,7 +8,7 @@ import { valuesComponent } from "./valuesComponent.js";
 import { favoritesProducts } from "./favoritesProducts.js";
 import { footerSection } from "./footer.js";
 import { searchModal } from "./modals/searchModal.js";
-import { shoppingCartModal } from "./shoppingCartModal.js";
+import { shoppingCartModal } from "./modals/shoppingCartModal.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
