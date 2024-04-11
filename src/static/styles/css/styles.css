@@ -773,9 +773,21 @@ footer.main-footer .main-footer__col4 {
   align-items: center;
   justify-content: space-between;
 }
+.search__top-nav .top-nav__search i.fa-magnifying-glass {
+  position: absolute;
+  left: 1rem;
+  color: #435B71;
+}
 .search__top-nav .top-nav__search .search__search-field {
   width: inherit;
-  padding: 0.5rem 1rem;
+  padding: 1rem 3rem;
+  border: inherit;
+  box-shadow: 0 0.2rem 0.2rem lightgray;
+  font-size: 1.1rem;
+  color: #435B71;
+}
+.search__top-nav .top-nav__search .search__search-field::placeholder {
+  color: #435B71;
 }
 .search__top-nav .top-nav__search .search__search-history {
   position: absolute;
@@ -784,7 +796,9 @@ footer.main-footer .main-footer__col4 {
 }
 .search__top-nav #close-search-modal-btn {
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  color: #435B71;
+  font-size: 1.4rem;
 }
 
 .search-modal__results {
