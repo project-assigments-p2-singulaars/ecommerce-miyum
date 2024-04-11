@@ -34,12 +34,12 @@ export function NewProductFormComponent( ){
         <span class="tags__tag" data-diet="vegan">Vegan</span>
         <span class="tags__tag" data-diet="vegetarian">Vegetarian</span>
       </div>
-      <select name="special-diets" id="product-special-diets">
-        <option value="gluten-free">Gluten-Free</option>
-        <option value="lactose-free">Lactose-Free</option>
-        <option value="vegan">Vegan</option>
-        <option value="vegetarian">Vegetarian</option>
-        <option value="sugar-free">Sugar-Free</option>
+      <select name="special_diets" id="product-special-diets">
+        <option value="Gluten Free">Gluten-Free</option>
+        <option value="Lactose Free">Lactose-Free</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Sugar Free">Sugar-Free</option>
       </select>
     </div>
 
@@ -64,7 +64,8 @@ export function NewProductFormComponent( ){
   newProductFormEl.addEventListener('submit', event  =>{
 
     event.preventDefault()
-    console.log(event)
+    console.log(event.target.special_diets);
+    console.log(event.target.special_diets.value);
 
     const newProductId = maxId + 1;
 
@@ -76,7 +77,7 @@ export function NewProductFormComponent( ){
         flavor: event.target.flavor.value,
         price: event.target.price.value,
         special_diets: event.target.special_diets.value,
-        image_url: event.target.image_url.value
+        image_url: event.target.image.value
     }
 
     fetch(productUrl, {
