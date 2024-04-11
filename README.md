@@ -26,7 +26,7 @@ The project will focus on developing the frontend of the online store, including
 
 ### How to Install the Project Locally
 To install the project on your local machine, follow these steps:
-1. Clone this repository to your local machine using Git: [link to repository](URL_DEL_REPOSITORIO)
+1. Clone this repository to your local machine using Git: https://github.com/project-assigments-p2-singulaars/ecommerce-miyum.git
 2. Navigate to the project directory.
 3. Run `npm install`.
 
