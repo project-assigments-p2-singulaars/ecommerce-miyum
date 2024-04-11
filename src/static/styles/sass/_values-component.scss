@@ -1,0 +1,29 @@
+
+.values-section{
+  display: none;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+      font-weight: 600;
+    }
+
+    p{
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (width > 800px) {
+
+  .values-section{
+    display: flex;
+  }
+
+}

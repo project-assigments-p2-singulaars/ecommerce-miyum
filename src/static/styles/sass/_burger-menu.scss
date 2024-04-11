@@ -1,0 +1,124 @@
+
+.burger-menu-view{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: $bg-color__main;
+  display: none;
+}
+
+.burger-menu-view.visible{
+  display: flex;
+  flex-direction: column;
+}
+
+body:has(.burger-menu-view.visible){
+  overflow: hidden;
+}
+
+.close-btn{
+  display: block;
+  border: .125rem solid $border-color__default;
+  width: fit-content;
+  background-color: white;
+  color: $text-color__close-btn--default;
+  padding: .4rem .5rem;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+
+  i{
+    font-size: 1.2rem;
+  }
+}
+
+.search-field{
+  width: 100%;
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.search-field__input{
+  font-size: 1.1rem;
+  width: 100%;
+  padding: .5rem 1rem;
+  border: .125rem solid $border-color__default;
+  border-radius: inherit;
+}
+
+
+.burger-menu-view__burger-menu{
+
+  .burger-menu__list{
+
+    .list__nav-item{
+      border-bottom: .125rem solid $border-color__default;
+      background-color: white;
+      font-size: 1.325rem;
+      font-weight: 500;
+      transition: all .2s ease;
+
+      &:first-child{
+        border-top: .125rem solid $border-color__default;
+      }
+      
+      &:hover{
+        background-color: $bg-color__product-card__image;
+      }
+
+      a{
+        display: flex;
+        padding: 1.125rem 2rem;
+      }
+
+      i:first-child{
+        margin-right: 1rem;
+      }
+
+      i:last-child{
+        margin-left: auto;
+      }
+
+      span::after{
+        content: '';
+        height: 2px;
+        background-color: $text-color__product-card__name;
+        margin-top: 2px;
+        display: block;
+        opacity: 0;
+        transition: opacity .2s ease;
+      }
+
+      &:hover span::after{
+        opacity: 1;
+      }
+
+    }
+
+  }
+}
+
+
+.burger-menu-view{
+
+  .social-icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: 6rem;
+    font-size: 2rem;
+
+    &__icon{
+      transition: color .3s ease;
+    }
+
+    &__icon:hover{
+      color: $color__rose-main;
+    }
+  }
+
+
+}
