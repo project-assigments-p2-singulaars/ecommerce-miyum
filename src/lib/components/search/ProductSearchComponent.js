@@ -3,6 +3,7 @@ export function ProductSearchComponent( product ){
   
   const productEl = document.createElement('article');
   productEl.classList.add('products__item');
+  productEl.dataset.id = product.id;
 
   productEl.innerHTML = /* html */`
     <span class="item__price">${product.price}€</span>
@@ -11,5 +12,19 @@ export function ProductSearchComponent( product ){
     <p class="item__flavor">${product.flavor}</p>
   `;
 
+  productEl.addEventListener('click', handleProductClick);
+
+
   return productEl;
+}
+
+
+function handleProductClick( e ){
+
+  if( e.target.dataset.id ){
+    localStorage.setItem('product-selected', e.target.dataset.id);
+  }
+
+  window.location.href = '/src/pages/product-detail-view.html';
+
 }

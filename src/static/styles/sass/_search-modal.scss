@@ -14,6 +14,10 @@
   transition: transform .5s ease;
   padding: 0 1.2rem;
 
+  .search__top-nav{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .search__top-nav{
@@ -100,6 +104,15 @@
 .search-modal.visible{
   visibility: visible;
   transform: translateY(0);
+}
+
+body:has(.search-modal.visible){
+  overflow: hidden;
+
+  .results__products{
+    height: 75vh;
+    overflow: scroll;
+  }
 }
 
 .search-modal.results{

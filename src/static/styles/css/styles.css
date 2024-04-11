@@ -749,6 +749,10 @@ footer.main-footer .main-footer__col4 {
   transition: transform 0.5s ease;
   padding: 0 1.2rem;
 }
+.search-modal .search__top-nav {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 
 .search__top-nav {
   max-height: 100px;
@@ -822,6 +826,14 @@ footer.main-footer .main-footer__col4 {
 .search-modal.visible {
   visibility: visible;
   transform: translateY(0);
+}
+
+body:has(.search-modal.visible) {
+  overflow: hidden;
+}
+body:has(.search-modal.visible) .results__products {
+  height: 75vh;
+  overflow: scroll;
 }
 
 .search-modal.results {

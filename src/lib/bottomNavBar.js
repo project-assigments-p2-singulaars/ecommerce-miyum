@@ -18,7 +18,6 @@ export function navbar() {
     //Manejador de eventos para el menu hamburguesa
     document.getElementById("menu-toggle").addEventListener("click", () => {
         toggleMenu();
-
     });
 
     const iconHome = document.getElementById("menu-home")
