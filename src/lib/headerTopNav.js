@@ -22,7 +22,7 @@ export function headerTopNav() {
       <div class="nav__right-buttons">
         <i class="right-buttons__search fa-solid fa-magnifying-glass"></i>
         <i class="right-buttons__shopping-cart fa-solid fa-bag-shopping"></i>
-        <i class="right-buttons__profile fa-regular fa-user"></i>
+        <a href="/src/pages/dashboard-view.html"><i class="right-buttons__profile fa-regular fa-user"></i></a>
       </div>
     </nav>
   `;

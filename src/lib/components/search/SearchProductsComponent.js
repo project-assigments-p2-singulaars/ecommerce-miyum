@@ -1,4 +1,5 @@
 import { FiltersComponent } from "./FiltersComponent.js";
+import { fetchProductsData } from "./SearchBarComponent.js";
 import { SearchResultsProductsComponent } from "./SearchResultsProductsComponent.js";
 import { SearchResultsTopBarComponent } from "./SearchResultsTopBarComponent.js";
 
@@ -65,8 +66,6 @@ export function SearchProductsComponent( viewType = 'search' ){
 }
 
 
-
-
 function cleanHTML( sectionToClean ){
 
   while( sectionToClean.firstChild ){
@@ -77,8 +76,20 @@ function cleanHTML( sectionToClean ){
 
 function getProductsDataFromStorage(){
 
-  const storageData = sessionStorage.getItem('search-results');
-  const parsedData = JSON.parse(storageData);
+
+  const storageData = localStorage.getItem('search-results');
+  let parsedData = JSON.parse(storageData);
+
+  if( !storageData ){
+
+    const fetchData = fetchProductsData();
+    fetchData.then( ( data ) => {
+      parsedData = data;
+    });
+    console.log('nada');
+
+  }
+
   return parsedData;
 
 }
