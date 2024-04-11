@@ -1,23 +1,44 @@
 
-export function SearchBarComponent( ) {
+export function SearchBarComponent( typeView ) {
 
   const searchBar = document.createElement('nav');
   searchBar.classList.add('search__top-nav', 'padding-wrap');
 
   const searchFieldContainer = document.createElement('div');
   searchFieldContainer.classList.add('top-nav__search');
+  searchBar.appendChild( searchFieldContainer );
 
-  searchBar.innerHTML = /* html */`
-    <div class="top-nav__search">
-      <input id="search__search-field" type="text" name="" class="search__search-field" placeholder="Search for your Yum..." />
-      <ul class="search__search-history">
-        <span>Last searchs:</span>
-        <span class="search-history__tag">Choco Yum</span>
-        <span class="search-history__tag">chocolate</span>
-        <span class="search-history__tag">vanilla cake</span>
-      </ul>
-    </div>
-  `;
+  const inputEl = document.createElement('input');
+  inputEl.classList.add('search__search-field');
+  inputEl.id = 'search__search-field';
+  inputEl.type = 'text';
+  inputEl.name = 'search';
+  inputEl.placeholder = 'Search for your Yum...';
+  searchFieldContainer.appendChild( inputEl );
+
+  if( typeView == 'search' ){
+
+    /* Image Logo */
+    const linkImageEl = document.createElement('a');
+    linkImageEl.classList.add('top-nav__image');
+    linkImageEl.href = '/src/index.html';
+    linkImageEl.target = '_blank';
+
+    const imageLogoEl = document.createElement('img');
+    imageLogoEl.src = '/src/static/images/logoMiYum.png';
+    imageLogoEl.alt = 'logo MiYum';
+    linkImageEl.appendChild( imageLogoEl );
+
+    searchFieldContainer.insertBefore( imageLogoEl, inputEl );
+    
+    
+    /* Close Button */
+    const closeModalBtn = document.createElement('i');
+    closeModalBtn.id = 'close-search-modal-btn';
+    closeModalBtn.classList.add('fa-solid', 'fa-x');
+
+    searchFieldContainer.appendChild( closeModalBtn );
+  }
 
   /* Get all products and set them all on storage when loading the document */
   let productsData;

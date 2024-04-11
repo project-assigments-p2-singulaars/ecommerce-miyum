@@ -10,7 +10,7 @@ export function headerTopNav() {
     <nav class="main-header__nav">
       <div class="nav__logo">
         <a href="/src/index.html" target="_blank" rel="noopener noreferrer">
-          <img src="./static/images/logoMiYum.png" alt="logo MiYum">
+          <img src="/src/static/images/logoMiYum.png" alt="logo MiYum">
           <span class="logo__text">MiYum</span>
         </a>
       </div>
