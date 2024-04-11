@@ -1,12 +1,12 @@
 import { productsComponent, renderProductElement, renderProducts } from "./productsComponent.js";
 
-export function categorySelector( productsComponentEl ){
+export async function categorySelector( productsComponentEl ){
 
   const categoriesNavBar = document.createElement('nav');
   categoriesNavBar.classList.add('categories-nav', 'padding-wrap');
   categoriesNavBar.innerHTML = /* html */`
     <ul class="categories-nav__categories-tabs">
-      <li class="categories-tabs__tab-item" id="tab-category-pastries" data-category='pastries'>
+      <li class="categories-tabs__tab-item active" id="tab-category-pastries" data-category='pastries'>
         <i class="tab-item__icon icon-croissant"></i>
         <span class="tab-item__text">Pastries</span>
       </li>
@@ -14,7 +14,7 @@ export function categorySelector( productsComponentEl ){
         <i class="tab-item__icon icon-cookie"></i>
         <span class="tab-item__text">Cookies</span>
       </li>
-      <li class="categories-tabs__tab-item active" id="tab-category-cakes" data-category='cakes'>
+      <li class="categories-tabs__tab-item" id="tab-category-cakes" data-category='cakes'>
         <i class="tab-item__icon icon-cake" ></i>
         <span class="tab-item__text">Cakes</span>
       </li>
@@ -30,8 +30,13 @@ export function categorySelector( productsComponentEl ){
   `;
 
   /* Append Element */
-  productsComponentEl.appendChild( categoriesNavBar );
+  await productsComponentEl.appendChild( categoriesNavBar );
 
+
+  /* Render Default Tab Products */
+  setTimeout( () => {
+    renderDefaultTabProducts();
+  }, 200);
 
   /* Events */
 
@@ -39,7 +44,6 @@ export function categorySelector( productsComponentEl ){
   categoriesListItems.forEach( ( listItem ) => {
     listItem.addEventListener( 'click', selectCategory );
   });
-
 
 
 
@@ -54,6 +58,13 @@ export function categorySelector( productsComponentEl ){
 
       cleanHTML( productsContainer );
 
+      /* Change Active Class to Tabs */
+      const currentActiveTab = document.querySelector('.categories-nav .categories-tabs__tab-item.active');
+      currentActiveTab.classList.toggle('active');
+      e.currentTarget.classList.toggle('active');
+
+      changeProductsTitle( categoryValue );
+
       const products = fetchProductsByCategory( categoryValue );
 
       products.then( data => {
@@ -63,6 +74,31 @@ export function categorySelector( productsComponentEl ){
     }
 
   }
+
+  
+}
+
+function renderDefaultTabProducts(){
+
+  const defaultTab = document.querySelector('.categories-nav .categories-tabs__tab-item.active');
+  console.log( defaultTab );
+  const tabCategoryValue = defaultTab.dataset.category;
+  const productsContainer = document.querySelector('.products__container');
+
+  const products = fetchProductsByCategory( tabCategoryValue );
+
+  changeProductsTitle( tabCategoryValue );
+
+  products.then( data => {
+    renderProducts( data, productsContainer );
+  });
+
+}
+
+function changeProductsTitle( newTitle ){
+
+  const title = document.querySelector('.products .products__title');
+  title.textContent = newTitle.charAt(0).toUpperCase() + newTitle.slice(1);
 
 }
 

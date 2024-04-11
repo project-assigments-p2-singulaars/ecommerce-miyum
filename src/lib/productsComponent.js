@@ -33,7 +33,7 @@ export function productsComponent( array ){
       fetchData = data;
     })
     .finally( () => {
-      renderProducts( fetchData, productsContainer );
+      // renderProducts( fetchData, productsContainer );
 
       productsSection.appendChild(productsContainer);
       productsComponent.appendChild( productsSection );
@@ -55,16 +55,30 @@ export function renderProducts( data, productsContainer ){
 
 export function renderProductElement( product ) {
   const productEl = document.createElement('article');
-  productEl.classList.add('products__product-card')
+  productEl.dataset.id = product.id;
+  productEl.classList.add('products__product-card');
+
+  const productDetailViewRoute = './pages/product-detail-view.html';
+
   productEl.innerHTML = /* html */`
-    <a href="./pages/product-detail-view.html">
-      <span class="product-card__price-tag">${product.price}€</span><button class="product-card__add-to-cart-btn"><i>+</i></button>
-      <figure class="product-card__image"><img src=${product.image_url} alt="${product.name}"></figure>
-      <div class="product-card__info">
-        <h4 class="product-card__name">${product.name}</h4>
-        <span class="product-card__category">${product.flavor}</span>
+    <a href=${productDetailViewRoute} data-id=${product.id} >
+      <span class="product-card__price-tag" data-id=${product.id}>${product.price}€</span><button class="product-card__add-to-cart-btn"><i>+</i></button>
+      <figure class="product-card__image" data-id=${product.id}><img src=${product.image_url} alt="${product.name}" data-id=${product.id}></figure>
+      <div class="product-card__info" data-id=${product.id}>
+        <h4 class="product-card__name" data-id=${product.id}>${product.name}</h4>
+        <span class="product-card__category" data-id=${product.id}>${product.flavor}</span>
       </div>
     </a>
   `;
+
+  productEl.addEventListener('click', e => {
+
+    if( e.target.dataset.id ){
+      localStorage.setItem('product-selected', e.target.dataset.id);
+    }
+
+  });
+
+
   return productEl;
 }
