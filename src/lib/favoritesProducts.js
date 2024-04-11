@@ -26,7 +26,7 @@ export async function favoritesProducts( ){
 
 async function getOurFavoriteProducts(){
 
-  const endpoint = 'http://localhost:3000/products?our_favorite=true';
+  const endpoint = 'https://miyum-service.onrender.com/products?our_favorite=true';
   const request = await fetch( endpoint );
   const response = await request.json();
 

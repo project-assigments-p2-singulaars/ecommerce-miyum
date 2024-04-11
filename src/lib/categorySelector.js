@@ -36,7 +36,7 @@ export async function categorySelector( productsComponentEl ){
   /* Render Default Tab Products */
   setTimeout( () => {
     renderDefaultTabProducts();
-  }, 200);
+  }, 500);
 
   /* Events */
 
@@ -116,7 +116,7 @@ async function fetchProductsByCategory( category ){
 
   try{
 
-    const endpoint = `http://localhost:3000/products?category=${category}`;
+    const endpoint = `https://miyum-service.onrender.com/products?category=${category}`;
     const request = await fetch( endpoint );
     const response = await request.json();
 

@@ -27,7 +27,7 @@ export function productsComponent( array ){
 
   let fetchData;
 
-  fetch ('http://localhost:3000/products')
+  fetch ('https://miyum-service.onrender.com/products')
     .then(response => response.json())
     .then(data => {
       fetchData = data;

@@ -86,7 +86,7 @@ export function SearchBarComponent( typeView ) {
 
 export async function fetchProductsData(){
 
-  const endpoint = `http://localhost:3000/products`;
+  const endpoint = `https://miyum-service.onrender.com/products`;
   const request = await fetch( endpoint );
   const response = await request.json();
 
