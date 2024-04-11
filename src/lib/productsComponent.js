@@ -33,7 +33,7 @@ export function productsComponent( array ){
       fetchData = data;
     })
     .finally( () => {
-      renderProducts( fetchData, productsContainer );
+      // renderProducts( fetchData, productsContainer );
 
       productsSection.appendChild(productsContainer);
       productsComponent.appendChild( productsSection );
