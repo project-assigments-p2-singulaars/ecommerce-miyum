@@ -49,6 +49,48 @@ export function NewProductFormComponent( ){
 
     <input type="submit" value="Save Changes">
   `;
+// CRUD
+
+  const productUrl = 'http://localhost:3000/products'
+
+  fetch(productUrl)
+    .then(response => response.json())
+    .then(products => {
+      
+      const existingIds = products.map(product => product.id);
+      const maxId = Math.max(...existingIds);
+      console.log(maxId);
+  
+  newProductFormEl.addEventListener('submit', event  =>{
+
+    event.preventDefault()
+    console.log(event)
+
+    const newProductId = maxId + 1;
+
+    const productData = {
+        id: newProductId,
+        name: event.target.name.value,
+        description: event.target.description.value,
+        category: event.target.category.value,
+        flavor: event.target.flavor.value,
+        price: event.target.price.value,
+        special_diets: event.target.special_diets.value,
+        image_url: event.target.image_url.value
+    }
+
+    fetch(productUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type':
+        'application/json'
+        },
+        body: JSON.stringify(productData)
+        })
+
+    })
+
+  })
 
   return newProductFormEl;
 }
