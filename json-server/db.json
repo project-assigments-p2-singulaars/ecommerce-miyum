@@ -1,12 +1,15 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "flavor": "Chocolate",
       "name": "Strawberry Fields",
       "description": "Croissant filled with cream and strawberries, perfect for a summer day.",
       "price": "3,50",
-      "special_diets": [1, 2],
+      "special_diets": [
+        1,
+        2
+      ],
       "ingredients": [
         "flour",
         "cream",
@@ -28,31 +31,15 @@
       "category": "pastries"
     },
     {
-      "id": 2,
-      "flavor": "Vanilla",
-      "name": "Sourdough Loaf",
-      "description": "Artisanal sourdough bread, freshly baked every morning.",
-      "price": "4,00",
-      "special_diets": [1, 4],
-      "ingredients": ["flour", "water", "sourdough starter", "salt"],
-      "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
-      "weight": "500g",
-      "calories": 200,
-      "fat": "2g",
-      "carbohydrates": "40g",
-      "protein": "8g",
-      "discount": true,
-      "discount_value": 0,
-      "category":"breads"
-    },
-    {
-      "id": 3,
+      "id": "3",
       "flavor": "Chocolate",
       "name": "Chocolate Chip Cookies",
       "description": "Classic chocolate chip cookies, soft and chewy.",
       "price": "2,50",
-      "special_diets": [4, 5],
+      "special_diets": [
+        4,
+        5
+      ],
       "ingredients": [
         "flour",
         "butter",
@@ -75,12 +62,15 @@
       "category": "pastries"
     },
     {
-      "id": 4,
+      "id": "4",
       "flavor": "Chocolate",
       "name": "Blueberry Muffin",
       "description": "Moist muffin packed with juicy blueberries.",
       "price": "2,75",
-      "special_diets": [2, 5],
+      "special_diets": [
+        2,
+        5
+      ],
       "ingredients": [
         "flour",
         "sugar",
@@ -104,12 +94,14 @@
       "category": "pastries"
     },
     {
-      "id": 5,
+      "id": "5",
       "flavor": "Chocolate",
       "name": "Almond Croissant",
       "description": "Croissant filled with almond paste and topped with sliced almonds.",
       "price": "3,75",
-      "special_diets": [5],
+      "special_diets": [
+        5
+      ],
       "ingredients": [
         "flour",
         "almond paste",
@@ -131,12 +123,15 @@
       "category": "pastries"
     },
     {
-      "id": 6,
+      "id": "6",
       "flavor": "Chocolate",
       "name": "Vegan Banana Bread",
       "description": "Moist and flavorful banana bread made without any animal products.",
       "price": "3,00",
-      "special_diets": [2, 4],
+      "special_diets": [
+        2,
+        4
+      ],
       "ingredients": [
         "flour",
         "bananas",
@@ -158,13 +153,19 @@
       "category": "cakes"
     },
     {
-      "id": 7,
+      "id": "7",
       "flavor": "Chocolate",
       "name": "Pumpkin Spice Donut",
       "description": "Creamy donut with pumpkin spice flavoring, topped with whipped cream.",
       "price": "5,00",
-      "special_diets": [4],
-      "ingredients": ["milk", "pumpkin spice syrup", "whipped cream"],
+      "special_diets": [
+        4
+      ],
+      "ingredients": [
+        "milk",
+        "pumpkin spice syrup",
+        "whipped cream"
+      ],
       "availability": true,
       "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
       "weight": "350g",
@@ -177,12 +178,15 @@
       "category": "donuts"
     },
     {
-      "id": 8,
+      "id": "8",
       "flavor": "Chocolate",
       "name": "Gluten-Free Brownie",
       "description": "Rich and fudgy chocolate brownie made without gluten-containing ingredients.",
       "price": "3,25",
-      "special_diets": [1, 4],
+      "special_diets": [
+        1,
+        4
+      ],
       "ingredients": [
         "cocoa powder",
         "butter",
@@ -204,12 +208,14 @@
       "category": "pastries"
     },
     {
-      "id": 9,
+      "id": "9",
       "flavor": "Chocolate",
       "name": "Lemon Poppyseed Muffin",
       "description": "Zesty lemon muffin with poppyseeds for added crunch.",
       "price": "2,75",
-      "special_diets": [4],
+      "special_diets": [
+        4
+      ],
       "ingredients": [
         "flour",
         "sugar",
@@ -234,12 +240,14 @@
       "category": "pastries"
     },
     {
-      "id": 10,
+      "id": "10",
       "flavor": "Chocolate",
       "name": "Cherry Pie",
       "description": "Sweet cherry pie with a flaky golden crust.",
       "price": "6,00",
-      "special_diets": [5],
+      "special_diets": [
+        5
+      ],
       "ingredients": [
         "flour",
         "butter",
@@ -262,12 +270,15 @@
       "category": "cakes"
     },
     {
-      "id": 11,
+      "id": "11",
       "flavor": "Chocolate",
       "name": "Vegan Chocolate Cake",
       "description": "Decadent chocolate cake made with vegan ingredients.",
       "price": "4,50",
-      "special_diets": [2, 4],
+      "special_diets": [
+        2,
+        4
+      ],
       "ingredients": [
         "flour",
         "sugar",
@@ -287,15 +298,17 @@
       "protein": "3g",
       "discount": true,
       "discount_value": 0,
-      "category":"cakes"
+      "category": "cakes"
     },
     {
-      "id": 12,
+      "id": "12",
       "flavor": "Chocolate",
       "name": "Oatmeal Raisin Cookies",
       "description": "Soft and chewy oatmeal cookies with plump raisins.",
       "price": "2,50",
-      "special_diets": [5],
+      "special_diets": [
+        5
+      ],
       "ingredients": [
         "flour",
         "oats",
@@ -320,12 +333,15 @@
       "category": "pastries"
     },
     {
-      "id": 13,
+      "id": "13",
       "flavor": "Chocolate",
       "name": "Gluten-Free Pancakes",
       "description": "Fluffy pancakes made with gluten-free flour.",
       "price": "3,50",
-      "special_diets": [1, 4],
+      "special_diets": [
+        1,
+        4
+      ],
       "ingredients": [
         "gluten-free flour",
         "baking powder",
@@ -348,12 +364,15 @@
       "category": "pastries"
     },
     {
-      "id": 14,
+      "id": "14",
       "flavor": "Chocolate",
       "name": "Vegan Blueberry Cheesecake",
       "description": "Creamy cheesecake with a blueberry compote topping, made without dairy or animal products.",
       "price": "5,50",
-      "special_diets": [2, 4],
+      "special_diets": [
+        2,
+        4
+      ],
       "ingredients": [
         "vegan cream cheese",
         "sugar",
@@ -377,13 +396,20 @@
       "category": "cakes"
     },
     {
-      "id": 15,
+      "id": "15",
       "flavor": "Chocolate",
       "name": "French Baguette",
       "description": "Classic French baguette with a crispy crust and soft interior.",
       "price": "2,00",
-      "special_diets": [1],
-      "ingredients": ["flour", "water", "yeast", "salt"],
+      "special_diets": [
+        1
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "salt"
+      ],
       "availability": true,
       "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
       "weight": "250g",
@@ -398,56 +424,78 @@
   ],
   "special_diets": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Gluten Free",
       "icon": "https://www.svgrepo.com/show/509969/gluten-free.svg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Vegan",
       "icon": "https://www.svgrepo.com/show/122215/leaves.svg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Egg Free",
       "icon": "https://www.svgrepo.com/show/509910/egg-free.svg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Dairy Free",
       "icon": "https://www.svgrepo.com/show/509875/dairy-free.svg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Nut Free",
       "icon": "https://www.svgrepo.com/show/510087/nut-free.svg"
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "pastries",
-      "products": [1, 4, 5, 6, 8, 9, 12, 13, 15]
+      "products": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        9,
+        12,
+        13,
+        15
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "cookies",
-      "products": [3, 12]
+      "products": [
+        3,
+        12
+      ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "cakes",
-      "products": [10, 11, 14]
+      "products": [
+        10,
+        11,
+        14
+      ]
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "donuts",
-      "products": [7]
+      "products": [
+        7
+      ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "breads",
-      "products": [2, 15]
+      "products": [
+        2,
+        15
+      ]
     }
   ]
 }

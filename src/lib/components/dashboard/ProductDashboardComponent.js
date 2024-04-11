@@ -4,6 +4,7 @@ export function ProductDashboardComponent( product ){
   
   const productEl = document.createElement('article');
   productEl.classList.add('products__item');
+  productEl.setAttribute('data-product-id', product.id);
 
   productEl.innerHTML = /* html */`
     <span class="item__price">${product.price}€</span>
@@ -18,5 +19,32 @@ export function ProductDashboardComponent( product ){
     </div>
   `;
 
+  // new from here
+
+  const productUrl = 'http://localhost:3000/products/'
+
+  const deleteButton = productEl.querySelector('.buttons__delete');
+  deleteButton.addEventListener('click', async () => {
+    const productId = productEl.getAttribute('data-product-id');
+    try {
+      const response = await fetch(productUrl + productId, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        productEl.remove();
+      } else {
+        console.error('Failed to delete product:', response.status, response.statusText);
+      }
+    } catch (error) {
+      console.error('Error deleting product:', error);
+    }
+  });
+
+
+  // ok from down
   return productEl;
 }
