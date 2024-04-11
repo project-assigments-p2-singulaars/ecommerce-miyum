@@ -36,7 +36,7 @@ export async function categorySelector( productsComponentEl ){
   /* Render Default Tab Products */
   setTimeout( () => {
     renderDefaultTabProducts();
-  }, 200);
+  }, 500);
 
   /* Events */
 
