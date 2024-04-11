@@ -74,9 +74,8 @@ function cleanHTML( sectionToClean ){
 
 }
 
-function getProductsDataFromStorage(){
-
-
+export function getProductsDataFromStorage(){
+  
   const storageData = localStorage.getItem('search-results');
   let parsedData = JSON.parse(storageData);
 

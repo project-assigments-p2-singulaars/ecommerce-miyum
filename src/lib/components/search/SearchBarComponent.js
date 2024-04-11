@@ -62,14 +62,7 @@ export function SearchBarComponent( typeView ) {
       // sendInputValueToStorage( inputValue );
 
       /* Event to consume data anywhere when storage is changed */
-      const sendDataByEvent = new CustomEvent('storageChanged', {
-        detail: {
-          isStorageChanged: true,
-          productsData: filteredProducts,
-          inputValue: inputValue
-        }
-      });
-      window.dispatchEvent( sendDataByEvent );
+      dispatchStorageEvent( filteredProducts );
 
 
       if( ( e.key == 'Backspace' || e.key == 'Delete' ) && e.target.value.trim() == '' ){
@@ -109,7 +102,7 @@ function filterProducts( products, inputValue ){
 
 }
 
-function sendProductsDataToStorage( productsData ){
+export function sendProductsDataToStorage( productsData ){
 
   localStorage.setItem( 'search-results', JSON.stringify( productsData ) );
 
@@ -119,4 +112,16 @@ function sendInputValueToStorage( inputValue ){
 
   sessionStorage.setItem( 'search-input', inputValue );
 
+}
+
+export function dispatchStorageEvent( products ){
+
+  const sendDataByEvent = new CustomEvent('storageChanged', {
+    detail: {
+      isStorageChanged: true,
+      productsData: products
+    }
+  });
+  window.dispatchEvent( sendDataByEvent );
+  
 }
