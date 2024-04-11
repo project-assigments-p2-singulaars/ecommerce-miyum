@@ -51,7 +51,7 @@ export function NewProductFormComponent( ){
   `;
 // CRUD
 
-  const productUrl = 'http://localhost:3000/products'
+  const productUrl = 'https://miyum-service.onrender.com/products'
 
   fetch(productUrl)
     .then(response => response.json())

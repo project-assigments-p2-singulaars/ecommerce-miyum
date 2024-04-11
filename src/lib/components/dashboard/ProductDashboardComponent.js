@@ -55,7 +55,7 @@ async function deleteProduct( productId ){
 
 async function removeProductFromDB( productId ){
 
-  const productUrl = 'http://localhost:3000/products/';
+  const productUrl = 'https://miyum-service.onrender.com/products/';
 
   try {
       await fetch(productUrl + productId, {

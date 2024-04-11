@@ -65,7 +65,7 @@ function handleBackButton(){
 
 export async function fetchProductData( id ){
 
-  const endpoint = `http://localhost:3000/products/${id}`;
+  const endpoint = `https://miyum-service.onrender.com/products/${id}`;
   const request = await fetch( endpoint );
   const response = await request.json();
 
@@ -74,7 +74,7 @@ export async function fetchProductData( id ){
 }
 
 export async function fetchSpecialDietData( id ){
-  const endpoint = `http://localhost:3000/special_diets/${id}`;
+  const endpoint = `https://miyum-service.onrender.com/special_diets/${id}`;
   const request = await fetch( endpoint );
   const response = await request.json();
 
