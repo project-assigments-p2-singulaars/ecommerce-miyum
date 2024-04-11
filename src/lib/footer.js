@@ -31,9 +31,9 @@ export function footerSection( ){
       </ul>
     </div>
     <div class="main-footer__col4">
-      <p>Syra Coffee SL-CIF B67406223
-      Carrer Femades, 78, 08907, Barcelona
-      Phone:(+34) 623595883</p>
+      <p>MiYum - SL-CIF B67406223<br>
+      Carrer Femades, 78, 08907, Barcelona<br>
+      Phone:(+34) 653432103</p>
     </div>
   `;
 
