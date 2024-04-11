@@ -1,36 +1,6 @@
 {
   "products": [
     {
-      "id": "8",
-      "flavor": "Chocolate",
-      "name": "Gluten-Free Brownie",
-      "description": "Rich and fudgy chocolate brownie made without gluten-containing ingredients.",
-      "price": "3,25",
-      "special_diets": [
-        1,
-        4
-      ],
-      "ingredients": [
-        "cocoa powder",
-        "butter",
-        "sugar",
-        "eggs",
-        "gluten-free flour",
-        "vanilla extract",
-        "salt"
-      ],
-      "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2021/09/27/16/10/croissant-6661477_1280.png",
-      "weight": "80g",
-      "calories": 200,
-      "fat": "12g",
-      "carbohydrates": "25g",
-      "protein": "3g",
-      "discount": true,
-      "discount_value": 0,
-      "category": "pastries"
-    },
-    {
       "id": "9",
       "flavor": "Chocolate",
       "name": "Lemon Poppyseed Muffin",

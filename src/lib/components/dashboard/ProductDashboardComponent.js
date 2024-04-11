@@ -1,10 +1,11 @@
-
+import { dispatchStorageEvent, sendProductsDataToStorage } from "../search/SearchBarComponent.js";
+import { getProductsDataFromStorage } from "../search/SearchProductsComponent.js";
 
 export function ProductDashboardComponent( product ){
-  
+
   const productEl = document.createElement('article');
   productEl.classList.add('products__item');
-  productEl.setAttribute('data-product-id', product.id);
+  productEl.setAttribute('data-id', product.id);
 
   productEl.innerHTML = /* html */`
     <span class="item__price">${product.price}€</span>
@@ -19,30 +20,53 @@ export function ProductDashboardComponent( product ){
     </div>
   `;
 
-  // new from here
-
-  const productUrl = 'http://localhost:3000/products/'
 
   const deleteButton = productEl.querySelector('.buttons__delete');
-  deleteButton.addEventListener('click', async () => {
-    const productId = productEl.getAttribute('data-product-id');
-    try {
-      const response = await fetch(productUrl + productId, {
+  deleteButton.addEventListener('click', async ( e ) => {
+
+    if ( e.target.classList.contains('fa-trash') ){
+      const currentProductEl = e.target.parentElement.parentElement.parentElement;
+      deleteProduct( currentProductEl.dataset.id );
+    } else if( e.target.classList.contains('buttons__delete') ){
+      const currentProductEl = e.target.parentElement.parentElement;
+      deleteProduct( currentProductEl.dataset.id );
+    }
+
+  });
+
+  return productEl;
+}
+
+
+
+async function deleteProduct( productId ){
+
+  const currentStorageData = getProductsDataFromStorage() ;
+
+  const removedProductFromData = currentStorageData.filter( ( item ) => {
+    return item.id !== productId;
+  })
+
+  sendProductsDataToStorage( removedProductFromData );
+  dispatchStorageEvent( removedProductFromData );
+  removeProductFromDB( productId );
+
+}
+
+async function removeProductFromDB( productId ){
+
+  const productUrl = 'http://localhost:3000/products/';
+
+  try {
+      await fetch(productUrl + productId, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
         }
       });
 
-      if (response.ok) {
-        productEl.remove();
-      } 
     } catch (error) {
       console.error('Error deleting product:', error);
     }
-  });
 
-
-  // ok from down
-  return productEl;
 }
