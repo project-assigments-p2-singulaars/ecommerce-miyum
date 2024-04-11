@@ -28,7 +28,8 @@
       "protein": "5g",
       "discount": false,
       "discount_value": 0,
-      "category": "pastries"
+      "category": "pastries",
+      "our_favorite": true
     },
     {
       "id": "2",
@@ -55,7 +56,8 @@
       "protein": "8g",
       "discount": true,
       "discount_value": 0,
-      "category": "breads"
+      "category": "breads",
+      "our_favorite": false
     },
     {
       "id": "3",
@@ -64,6 +66,7 @@
       "description": "Classic chocolate chip cookies, soft and chewy.",
       "price": "2,50",
       "special_diets": [
+        1,
         4,
         5
       ],
@@ -86,7 +89,8 @@
       "protein": "2g",
       "discount": true,
       "discount_value": 0,
-      "category": "cookies"
+      "category": "cookies",
+      "our_favorite": false
     },
     {
       "id": "4",
@@ -95,6 +99,7 @@
       "description": "Indulge in the ultimate chocolate experience with our signature 'Chocho Yum' muffin. Moist, chocolatey, and utterly irresistible, it's the perfect treat to satisfy your sweet cravings and leave you craving for more.",
       "price": "2,75",
       "special_diets": [
+        1,
         4
       ],
       "ingredients": [
@@ -118,7 +123,8 @@
       "protein": "4g",
       "discount": false,
       "discount_value": 0,
-      "category": "pastries"
+      "category": "pastries",
+      "our_favorite": true
     },
     {
       "id": "5",
@@ -127,6 +133,7 @@
       "description": "A guilt-free delight, these Vegan Gluten-Free Pretzel Pillows are crispy on the outside, soft on the inside, and bursting with savory flavor.",
       "price": "3,75",
       "special_diets": [
+        1,
         5
       ],
       "ingredients": [
@@ -147,7 +154,8 @@
       "protein": "6g",
       "discount": false,
       "discount_value": 0,
-      "category": "pastries"
+      "category": "pastries",
+      "our_favorite": true
     },
     {
       "id": "6",
@@ -156,6 +164,7 @@
       "description": "A seasonal delight, blending creamy pumpkin with a perfect mix of spices for a taste of autumn in every bite.",
       "price": "3,00",
       "special_diets": [
+        1,
         2,
         4
       ],
@@ -184,13 +193,14 @@
       "flavor": "Strawberry",
       "name": "Blush Berry Donut",
       "description": "A sweet delight with its soft texture and irresistible pink frosting, a treat sure to bring a smile to your face.",
-      "price": "5,00",
+      "price": "2,50",
       "special_diets": [
+        1,
         4
       ],
       "ingredients": [
         "milk",
-        "pumpkin spice syrup",
+        "strawberry syrup",
         "whipped cream"
       ],
       "availability": true,
@@ -202,7 +212,8 @@
       "protein": "8g",
       "discount": false,
       "discount_value": 0,
-      "category": "donuts"
+      "category": "donuts",
+      "our_favorite": false
     },
     {
       "id": "8",
@@ -232,7 +243,8 @@
       "protein": "3g",
       "discount": true,
       "discount_value": 0,
-      "category": "pastries"
+      "category": "pastries",
+      "our_favorite": true
     },
     {
       "id": "9",
@@ -241,6 +253,7 @@
       "description": "Moist muffin packed with juicy blueberries.",
       "price": "2,75",
       "special_diets": [
+        1,
         2,
         5
       ],
@@ -264,7 +277,8 @@
       "protein": "4g",
       "discount": false,
       "discount_value": 0,
-      "category": "pastries"
+      "category": "pastries",
+      "our_favorite": false
     },
     {
       "id": "10",
@@ -273,6 +287,7 @@
       "description": "Savor the tangy goodness of our lemon pie, featuring a zesty lemon filling in a buttery crust.",
       "price": "6,00",
       "special_diets": [
+        1,
         5
       ],
       "ingredients": [
@@ -294,7 +309,8 @@
       "protein": "5g",
       "discount": false,
       "discount_value": 0,
-      "category": "cakes"
+      "category": "cakes",
+      "our_favorite": true
     },
     {
       "id": "11",
@@ -303,6 +319,7 @@
       "description": "Decadent chocolate cake made with vegan ingredients.",
       "price": "4,50",
       "special_diets": [
+        1,
         2,
         4
       ],
@@ -325,16 +342,19 @@
       "protein": "3g",
       "discount": true,
       "discount_value": 0,
-      "category": "cakes"
+      "category": "cakes",
+      "our_favorite": false
     },
     {
       "id": "12",
       "flavor": "Caramel",
       "name": "Caramel Crunch Donut",
-      "description": "Soft and crunchy caramel donuts with cookie bites on top.",
+      "description": "Soft and crunchy caramel donut with cookie bites on top.",
       "price": "2,50",
       "special_diets": [
-        5
+        1,
+        5,
+        4
       ],
       "ingredients": [
         "flour",
@@ -357,13 +377,14 @@
       "protein": "2g",
       "discount": false,
       "discount_value": 0,
-      "category": "donuts"
+      "category": "donuts",
+      "our_favorite": false
     },
     {
       "id": "13",
       "flavor": "Chocolate Cream",
       "name": "Chocho Bomb Yum",
-      "description": "Fluffy pancakes made with gluten-free flour.",
+      "description": "Harmonious blend of rich chocolate, plump cherries, and creamy texture. Baked with care, each bite offers a perfect balance of sweetness and indulgence, making it the ultimate treat for any occasion.",
       "price": "3,50",
       "special_diets": [
         1,
@@ -388,17 +409,20 @@
       "protein": "4g",
       "discount": false,
       "discount_value": 0,
-      "category": "pastries"
+      "category": "pastries",
+      "our_favorite": true
     },
     {
       "id": "14",
       "flavor": "Cinammon",
       "name": "Cinammon Sins Donut",
       "description": "Chewy donut with a cinammon topping, made without dairy or animal products.",
-      "price": "5,50",
+      "price": "2,50",
       "special_diets": [
+        1,
         2,
-        4
+        4,
+        5
       ],
       "ingredients": [
         "vegan cream cheese",
@@ -407,7 +431,7 @@
         "coconut milk",
         "vanilla extract",
         "lemon juice",
-        "blueberries",
+        "cinammon",
         "cornstarch",
         "salt"
       ],
@@ -420,14 +444,184 @@
       "protein": "4g",
       "discount": false,
       "discount_value": 0,
-      "category": "donuts"
+      "category": "donuts",
+      "our_favorite": false
     },
     {
       "id": "15",
       "flavor": "Savory",
-      "name": "Oui Oui Baguette",
+      "name": "Fresh&French Baguette",
       "description": "Classic French baguette with a crispy crust and soft interior.",
+      "price": "1,00",
+      "special_diets": [
+        1,
+        2
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2021/06/01/07/18/french-bread-6300852_1280.png",
+      "weight": "120g",
+      "calories": 180,
+      "fat": "1g",
+      "carbohydrates": "35g",
+      "protein": "5g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "breads",
+      "our_favorite": true
+    },
+    {
+      "id": "16",
+      "flavor": "Savory",
+      "name": "Loafy Dreams",
+      "description": "Classic bread loaf with a delicious interior.",
       "price": "2,00",
+      "special_diets": [
+        1,
+        5
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2022/01/24/13/55/bread-6963472_1280.png",
+      "weight": "280g",
+      "calories": 120,
+      "fat": "1g",
+      "carbohydrates": "35g",
+      "protein": "5g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "breads",
+      "our_favorite": false
+    },
+    {
+      "id": "17",
+      "flavor": "Savory",
+      "name": "Cloud Loaf",
+      "description": "Soft, fluffy texture while also being evocative of lightness and comfort.",
+      "price": "1,80",
+      "special_diets": [
+        1,
+        4
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2017/03/31/02/27/bread-2190249_1280.png",
+      "weight": "290g",
+      "calories": 150,
+      "fat": "1g",
+      "carbohydrates": "35g",
+      "protein": "5g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "breads",
+      "our_favorite": false
+    },
+    {
+      "id": "18",
+      "flavor": "Savory",
+      "name": "Morning Bagel",
+      "description": "Perfect breakfast bagel, boasting a satisfying chewiness and a hint of crustiness on the outside, making every bite a delightful experience.",
+      "price": "1,50",
+      "special_diets": [
+        1,
+        2,
+        5
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2021/04/27/00/26/bagel-6210192_1280.png",
+      "weight": "290g",
+      "calories": 150,
+      "fat": "1g",
+      "carbohydrates": "35g",
+      "protein": "5g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "breads",
+      "our_favorite": false
+    },
+    {
+      "id": "19",
+      "flavor": "Savory",
+      "name": "Granny's Pigtails",
+      "description": "These delightful pastries feature a playful twist of dough, perfectly baked to golden perfection, offering a tantalizing blend of flakiness and sweetness in every bite.",
+      "price": "2,00",
+      "special_diets": [
+        1,
+        3
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2022/01/08/17/56/pigtail-6924518_1280.png",
+      "weight": "290g",
+      "calories": 150,
+      "fat": "1g",
+      "carbohydrates": "35g",
+      "protein": "5g",
+      "discount": false,
+      "discount_value": 0,
+      "category": "pastries",
+      "our_favorite": false
+    },
+    {
+      "id": "20",
+      "flavor": "Chocolate",
+      "name": "Rainbow Bliss",
+      "description": "These cookies are a burst of color and flavor, blending a buttery base with vibrant candy pieces for a treat that delights both the eyes and the taste buds.",
+      "price": "2,00",
+      "special_diets": [
+        1,
+        5
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "salt"
+      ],
+      "availability": true,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Cookie.png/800px-Cookie.png",
+      "weight": "200g",
+      "calories": 350,
+      "fat": "1g",
+      "carbohydrates": "55g",
+      "protein": "15g",
+      "discount": true,
+      "discount_value": 0,
+      "category": "cookies",
+      "our_favorite": true
+    },
+    {
+      "id": "21",
+      "flavor": "Ginger",
+      "name": "Ginger Spice",
+      "description": "Perfect balance of spicy ginger and sweet molasses. Baked to golden perfection, they offer a comforting warmth with each delicious bite.",
+      "price": "4,00",
       "special_diets": [
         1
       ],
@@ -438,15 +632,90 @@
         "salt"
       ],
       "availability": true,
-      "image_url": "https://cdn.pixabay.com/photo/2017/03/31/02/27/bread-2190249_1280.png",
-      "weight": "250g",
-      "calories": 180,
+      "image_url": "https://cdn.pixabay.com/photo/2023/12/06/18/48/gingerbread-8434208_1280.png",
+      "weight": "200g",
+      "calories": 350,
       "fat": "1g",
-      "carbohydrates": "35g",
-      "protein": "5g",
-      "discount": false,
+      "carbohydrates": "55g",
+      "protein": "15g",
+      "discount": true,
       "discount_value": 0,
-      "category": "breads"
+      "category": "cookies",
+      "our_favorite": false
+    },
+    {
+      "id": "22",
+      "flavor": "Chocolate",
+      "name": "Donut You Dare",
+      "description": "Made with premium cocoa and glazed to perfection, each bite promises a rich, melt-in-your-mouth experience.",
+      "price": "2,50",
+      "special_diets": [
+        1,
+        4,
+        5
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "salt",
+        "oats",
+        "butter",
+        "sugar",
+        "raisins",
+        "eggs",
+        "vanilla extract",
+        "baking soda",
+        "cinnamon",
+        "chocolate"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2021/08/28/19/49/donut-6581822_1280.png",
+      "weight": "200g",
+      "calories": 350,
+      "fat": "1g",
+      "carbohydrates": "55g",
+      "protein": "15g",
+      "discount": true,
+      "discount_value": 0,
+      "category": "donuts",
+      "our_favorite": false
+    },
+    {
+      "id": "23",
+      "flavor": "Cereals",
+      "name": "Sunny Crunch Donut",
+      "description": "Topped with a generous sprinkling of crunchy cereal, each bite offers a delightful contrast of textures, from the soft, fluffy dough to the crisp cereal bits.",
+      "price": "2,50",
+      "special_diets": [
+        1,
+        4
+      ],
+      "ingredients": [
+        "flour",
+        "water",
+        "yeast",
+        "flour",
+        "oats",
+        "butter",
+        "sugar",
+        "raisins",
+        "eggs",
+        "vanilla extract",
+        "baking soda",
+        "cereals"
+      ],
+      "availability": true,
+      "image_url": "https://cdn.pixabay.com/photo/2022/02/16/16/49/dessert-7017160_1280.png",
+      "weight": "200g",
+      "calories": 350,
+      "fat": "1g",
+      "carbohydrates": "55g",
+      "protein": "15g",
+      "discount": true,
+      "discount_value": 0,
+      "category": "donuts",
+      "our_favorite": true
     }
   ],
   "special_diets": [
