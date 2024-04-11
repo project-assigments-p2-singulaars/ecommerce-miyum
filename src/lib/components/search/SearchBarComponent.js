@@ -16,6 +16,10 @@ export function SearchBarComponent( typeView ) {
   inputEl.placeholder = 'Search for your Yum...';
   searchFieldContainer.appendChild( inputEl );
 
+  const searchIcon = document.createElement('i');
+  searchIcon.classList.add('fa-solid', 'fa-magnifying-glass');
+  searchFieldContainer.appendChild( searchIcon );
+
   if( typeView == 'search' ){
 
     /* Image Logo */
@@ -29,7 +33,7 @@ export function SearchBarComponent( typeView ) {
     imageLogoEl.alt = 'logo MiYum';
     linkImageEl.appendChild( imageLogoEl );
 
-    searchFieldContainer.insertBefore( imageLogoEl, inputEl );
+    searchBar.insertBefore( imageLogoEl, searchFieldContainer );
     
     
     /* Close Button */
@@ -37,7 +41,7 @@ export function SearchBarComponent( typeView ) {
     closeModalBtn.id = 'close-search-modal-btn';
     closeModalBtn.classList.add('fa-solid', 'fa-x');
 
-    searchFieldContainer.appendChild( closeModalBtn );
+    searchBar.appendChild( closeModalBtn );
   }
 
   /* Get all products and set them all on storage when loading the document */
@@ -59,7 +63,6 @@ export function SearchBarComponent( typeView ) {
       const inputValue = e.target.value;
       const filteredProducts = filterProducts( productsData, inputValue );
       sendProductsDataToStorage( filteredProducts );
-      // sendInputValueToStorage( inputValue );
 
       /* Event to consume data anywhere when storage is changed */
       dispatchStorageEvent( filteredProducts );

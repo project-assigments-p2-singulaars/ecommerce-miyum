@@ -40,9 +40,23 @@
     align-items: center;
     justify-content: space-between;
 
+    i.fa-magnifying-glass{
+      position: absolute;
+      left: 1rem;
+      color: #435B71;
+    }
+
     .search__search-field{
       width: inherit;
-      padding: .5rem 1rem;
+      padding: 1rem 3rem;
+      border: inherit;
+      box-shadow: 0 .2rem .2rem lightgray;
+      font-size: 1.1rem;
+      color: #435B71;
+    }
+
+    .search__search-field::placeholder{
+      color: #435B71;
     }
 
     .search__search-history{
@@ -55,7 +69,9 @@
 
   #close-search-modal-btn{
     cursor: pointer;
-    margin-left: 1rem;
+    margin-left: .5rem;
+    color: #435B71;
+    font-size: 1.4rem;
   }
 }
 
