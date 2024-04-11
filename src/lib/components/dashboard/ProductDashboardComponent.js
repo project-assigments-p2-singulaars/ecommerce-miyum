@@ -36,9 +36,7 @@ export function ProductDashboardComponent( product ){
 
       if (response.ok) {
         productEl.remove();
-      } else {
-        console.error('Failed to delete product:', response.status, response.statusText);
-      }
+      } 
     } catch (error) {
       console.error('Error deleting product:', error);
     }
