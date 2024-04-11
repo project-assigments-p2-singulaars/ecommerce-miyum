@@ -50,6 +50,7 @@
   .nav__right-buttons{
 
     display: flex;
+    align-items: center;
     gap: 1.2rem;
     font-size: 1.4rem;
 
@@ -61,6 +62,16 @@
     .right-buttons__shopping-cart{
       display: none;
     }
+  }
+
+  .new-product-button{
+    background-color: #D9D9D9;
+    border: inherit;
+    padding: .5rem .8rem;
+    color: black;
+    border-radius: .25rem;
+    font-weight: 500;
+    cursor: pointer;
   }
 
 }
